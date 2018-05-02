@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#96145c</color>
+    <color name="primary_dark_color">#72144c</color>
+    <color name="accent_color">#ffc107</color>
+
+    <color name="primary_text_color">#212121</color>
+    <color name="secondary_text_color">#757575</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#fff</color>
+    <color name="white_google">#fafafa</color>
+    <color name="light_grey">#ededed</color>
+    <color name="medium_grey">#cecece</color>
+    <color name="dark_grey">#b6b6b6</color>
+    <color name="black">#000000</color>
+    <color name="glyph_color">#6D6D6D</color>
+    <color name="glyph_bg">#EEEEEE</color>
+
+    <color name="green">#4caf50</color>
+    <color name="yellow">#ffc107</color>
+    <color name="red">#f44336</color>
+
+    <!-- card colors -->
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <!-- end card colors -->
+
+    <color name="fb_color">#3f51b5</color>
+    <color name="hp_search_box">#f3f3f3</color>
+    <color name="stroke_defined_search_field">#e8e8e8</color>
+
+    <!-- Car Color -->
+    <color name="car_color_white">#F5F5F5</color>
+    <color name="car_color_grey">#9E9E9E</color>
+    <color name="car_color_blue_grey">#607D8B</color>
+    <color name="car_color_black">#212121</color>
+    <color name="car_color_yellow">#FFEB3B</color>
+    <color name="car_color_orange">#FF9800</color>
+    <color name="car_color_red">#F44336</color>
+    <color name="car_color_brown">#795548</color>
+    <color name="car_color_pink">#F06292</color>
+    <color name="car_color_purple">#9C27B0</color>
+    <color name="car_color_blue">#3F51B5</color>
+    <color name="car_color_green">#4CAF50</color>
+
+    <color name="polyline_selected_border">#218ed8</color>
+    <color name="polyline_selected_body">#00b3fd</color>
+
+    <color name="polyline_unselected_border">#8e8e8e</color>
+    <color name="polyline_unselected_body">#afafaf</color>
+
+    <color name="google_blue">#4285F4</color>
+    <color name="facebook_blue">#3F51B5</color>
+    <color name="transparent_white">#26FFFFFF</color>
+
+</resources>

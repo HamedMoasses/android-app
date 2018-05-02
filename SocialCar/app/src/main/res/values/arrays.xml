@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="drawer_items_icons">
+        <item>@drawable/ic_home_24dp</item>
+        <item>@drawable/ic_account_box_24dp</item>
+        <item>@drawable/ic_trips</item>
+        <item>@drawable/ic_report__drawer_24dp</item>
+        <item>@drawable/ic_messages_black_24dp</item>
+    </integer-array>
+</resources>

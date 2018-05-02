@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RideMyRoute</string>
+
+    <string name="url_faq">http://socialcar-project.eu/faq-it</string>
+    <string name="url_contact_us">http://socialcar-project.eu/contact-it</string>
+    <string name="url_terms">http://socialcar-project.eu/terms-it</string>
+
+    <string name="trip_solution_current_trips">Viaggi trovati</string>
+    <string name="trip_solution_current_tripRequest">Richieste di viaggio attuali</string>
+
+    <!-- Sign UP ACTIVITY -->
+    <string name="password">Password</string>
+    <string name="add_image">AGGIUNGI IMMAGINE</string>
+    <string name="your_personal_info">Altre info</string>
+    <string name="name">Nome</string>
+    <string name="email">Email</string>
+    <string name="phone">Telefono</string>
+    <string name="dob">Data di nascita</string>
+    <string name="gender">Sesso</string>
+    <string name="register">Registrati</string>
+
+    <string name="error_filled_field">Riempi correttamente tutti i campi obbligatori</string>
+    <string name="choose">Seleziona</string>>
+    <string name="step">Passo</string>
+    <string name="of">di</string>
+    <string name="complete_signup">Completa registrazione</string>
+    <string name="min6">Minimo 6 caratteri</string>
+
+    <string name="social">Social</string>
+    <string name="social_description">Sblocca altre funzionalità \nconnettendoti con il tuo account facebook o google!</string>
+
+
+    <string name="new_driver_message">Sembra che tu non sia \nregistrato come autista</string>
+    <string name="add_car">Aggiungi un’auto</string>
+    <string name="become_a_driver">Diventa autista</string>
+
+
+    <string name="error_enable_permission_app">Abilita tutte le autorizzazioni per questa app</string>
+
+
+    <!-- Trip search -->
+    <string name="path">Percorso</string>
+    <string name="set_starting_point">Impostare punto di partenza</string>
+    <string name="starting_point">Punto di partenza</string>
+    <string name="set_destination_point">Impostare punto d’arrivo</string>
+    <string name="destination_point">Punto d’arrivo</string>
+    <string name="search_solutions">Cerca collegamenti</string>
+    <string name="label_continue">Continua</string>
+    <string name="hint_insert_starting">Inserisci indirizzo di partenza</string>
+    <string name="hint_insert_destination">Inserisci indirizzo d’arrivo</string>
+    <string name="start_point_not_setted">Impostare il punto di partenza</string>
+
+    <string name="note">Nota</string>
+    <string name="tab_title_passenger">PASSEGGERO</string>
+    <string name="tab_title_driver">AUTISTA</string>
+
+    <string name="male">Uomo</string>
+    <string name="female">Donna</string>
+
+
+    <string name="user_already_created">Utente già esistente! Provane un altro.</string>
+    <string name="no_solutions_found">Nessun collegamento è stato trovato. \nRiprova.</string>
+    <string name="driver">Autista</string>
+    <string name="solutions_toolbar_label">Collegamenti</string>
+
+    <string name="waiting_time_toolbar_label">Tempo d’attesa</string>
+    <string name="solutions_details_toolbar_label">Dettagli</string>
+    <string name="accept_lift_toolbar_label">Richiesta di passaggio</string>
+    <string name="solutions_filters_label">Filtri</string>
+    <string name="solutions_departure_time_label">Partenza: ADESSO</string>
+
+    <string name="ok">OK</string>
+    <string name="retry">Riprova</string>
+    <string name="feedback_not_complete_error">Vi preghiamo di rispondere a tutte le domande di questo sondaggio.</string>
+    <string name="generic_error">Qualcosa è andato storto. \nProva di nuovo.</string>
+    <string name="no_connection_error">Controlla la tua connessione internet \ne riprova.</string>
+    <string name="unauthorized_error">Si è verificato un errore</string>
+    <string name="forgot_password">Password dimenticata ?</string>
+    <string name="forgot_password_msg">Vi preghiamo di inviarci un’email a &lt;a href="http://socialcar-project.eu/contact-it">Contattaci&lt;/a></string>
+    <string name="signup">Registrati</string>
+    <string name="dont_have_account">Non hai un account?</string>
+    <string name="signin">Accedi</string>
+    <string name="no_rout_found">Nessun percorso trovato</string>
+
+    <string name="signin_facebook">Accedi con Facebook</string>
+    <string name="signin_google">Accedi con Google</string>
+    <string name="have_account">Hai già un account?</string>
+    <string name="signin_by_email">Accedi tramite email</string>
+
+    <string name="insert_email">Inserire email</string>
+    <string name="insert_password">Inserire password</string>
+    <string name="invalid_email_password">Email o password non valida</string>
+    <string name="social_sign_in_or">O</string>
+    <string name="or">O</string>
+    <string name="car_info">Info automobile</string>
+    <string name="additional_info">Info supplementari</string>
+    <string name="model">Modello</string>
+    <string name="car_plate">Targa</string>
+    <string name="plate">Targa</string>
+
+    <string name="food_allowed">Cibo consentito</string>
+    <string name="smoking_allowed">Fumo consentito</string>
+    <string name="car_photos">Foto auto</string>
+    <string name="air_conditioning">Aria condizionata</string>
+    <string name="pets_allowed">Animali consentiti</string>
+    <string name="luggage_allowed">Bagagli consentiti</string>
+    <string name="child_seat">Seggiolino per bambini</string>
+    <string name="colour">Colore</string>
+    <string name="select_colour">Seleziona colore</string>
+    <string name="seat">Posti</string>
+    <string name="message_progress_dialog">Caricamento…</string>
+    <string name="send_request">Invia richiesta </string>
+
+    <string name="lift_request">Richiesta di passaggio</string>
+    <string name="trip_accepted">Viaggio accettato</string>
+    <string name="trip_declined">Viaggio rifiutato</string>
+    <string name="trip_cancelled">Viaggio cancellato</string>
+
+
+    <string name="accept_lift">Accetta</string>
+    <string name="decline_lift">Rifiuta</string>
+    <string name="declined">Rifiutato</string>
+
+    <string name="from">da</string>
+    <string name="to">a</string>
+    <string name="at_what_hour">\@</string>
+
+    <string name="open_navigation_drawer">Apri menu laterale</string>
+    <string name="close_navigation_drawer">Chiudi menu laterale</string>
+
+    <!-- Drawer Titles -->
+    <string name="home">Home</string>
+    <string name="profile">Profilo</string>
+    <string name="myLifts">I miei viaggi</string>
+    <string name="settings">Impostazioni</string>
+    <string name="faq">FAQ</string>
+    <string name="terms">Termini e Condizioni</string>
+    <string name="contact_us">Contattaci</string>
+    <string name="logout">Esci</string>
+    <string name="logout_dialog_text">Vuoi uscire?</string>
+
+    <string name="yes">Sì</string>
+    <string name="no">No</string>
+
+    <string name="large">Grande</string>
+    <string name="medium">Medio</string>
+    <string name="small">Piccolo</string>
+
+    <string name="trip_status_msg">Lascia un feedback</string>
+    <string name="tab_title_lift_requested">RICHIESTI</string>
+    <string name="tab_title_lift_offered">OFFERTI</string>
+    <string name="active_trip">Viaggio attivo</string>
+    <string name="cancelled_trip">Viaggio cancellato</string>
+    <string name="completed_trip">Il viaggio è completato</string>
+    <string name="pending_trip">Viaggio in sospeso</string>
+    <string name="declined_trip">Viaggio rifiutato</string>
+    <string name="message_cancelled_trip">Il viaggio è stato cancellato.</string>
+
+    <string name="text_no_trips_found">Nessun viaggio trovato.</string>
+    <string name="text_became_new_driver">Sembra che tu non sia \nregistrato come autista.</string>
+    <string name="search_for_trips">Cerca viaggi</string>
+    <string name="btn_become_driver">Diventa un autista</string>
+    <string name="offer_trip">Offri un viaggio</string>
+
+
+    <string name="google_play_service_error">Errore di Google Play Service. Riprova.</string>
+    <string name="google_play_service_not_available">Google Play Service non disponibile.</string>
+    <string name="status">Stato:</string>
+
+    <string name="lift_status_pending_message">in attesa di risposta</string>
+    <string name="lift_status_accepted_message">richiesta di passaggio accettata</string>
+    <string name="lift_status_decline_message">richiesta di passaggio declinata</string>
+    <string name="cancel_request">Cancella richiesta</string>
+    <string name="cancel_request_confirmation_text">Vuoi annullare il passaggio?</string>
+    <string name="sms">SMS</string>
+    <string name="call">Chiama</string>
+    <string name="pending_lift_title">Viaggio in sospeso</string>
+    <string name="active_lift_title">Viaggio attivo</string>
+    <string name="completed_lift_title">Viaggio completato</string>
+    <string name="cancelled_lift_title">Viaggio cancellato</string>
+    <string name="declined_lift_title">Viaggio rifiutato</string>
+
+    <string name="invalid_search_ride_input">Punto di partenza o d’arrivo non valido</string>
+    <string name="enter_trip_name">Inserire nome del viaggio</string>
+    <string name="create_ride">Crea</string>
+    <string name="toolbar_label_new_trip">Nuovo viaggio</string>
+    <string name="pick_image_intent_text">Foto profilo</string>
+    <string name="login_info">Info di accesso</string>
+    <string name="error_upload_picture">Si è verificato un errore durante il caricamento della foto</string>
+
+    <string name="delete_ride_dialog_title">Cancellare viaggio?</string>
+    <string name="update_ride_dialog_title">Disattivare viaggio?</string>
+
+    <string name="ride_dialog_body_message">Se avete passeggeri associati a questo viaggio, saranno informati.</string>
+
+
+    <string name="trip_deleted">Viaggio cancellato</string>
+    <string name="undo_snackbar">UNDO</string>
+
+    <string name="delete_trip">CANCELLA VIAGGIO</string>
+    <string name="ride_message">Quando accetti una richiesta di passaggio per questo viaggio, l’avatar del passeggero verrà visualizzato in quest’area.</string>
+    <string name="click_to_add_ride">Per creare un nuovo viaggio, premi il bottone \"+\" .</string>
+
+    <string name="at_date">alle</string>
+    <string name="on_date">il</string>
+
+    <string name="ride_activated">Viaggio attivato</string>
+    <string name="ride_disabled">Viaggio disattivato</string>
+    <string name="rating">Valutazione</string>
+    <string name="wheelchair">Sedia a rotelle, non vedente</string>
+    <string name="public_feedback">Al fine di aiutare gli altri utilizzatori, il vostro feedback sarà pubblicato.</string>
+    <string name="ask_survey_text">Aiuta gli altri utilizzatori. Dicci di più sulle capacità di guida di %1$s rispondendo a questo rapido sondaggio.</string>
+
+    <string name="not_now">NON ORA</string>
+
+    <string name="question_rating_title">Come è stata la tua esperienza con %1$s ?</string>
+
+    <!--Survey-->
+    <string name="survey_title">Sondaggio</string>
+    <string name="thanks_survey">Grazie per il vostro feedback</string>
+    <string name="question_survey_punctuation">%1$s è stato puntuale?</string>
+    <string name="question_survey_satisfaction">Ti è piaciuto viaggiare con%1$s?</string>
+    <string name="question_survey_comfort">L’auto era confortevole?</string>
+    <string name="question_survey_duration">L’orario d’arrivo è stato rispettato?</string>
+    <string name="question_survey_route">%1$s ha completato il percorso dichiarato?</string>
+    <string name="question_survey_driver_behaviour">Come era lo stile di guida di %1$s ?</string>
+    <string name="question_survey_carpooler_behaviour">Come si è comportato %1$s?</string>
+
+    <string name="min">min</string>
+    <string name="stops">fermate</string>
+    <string name="arriving">In arrivo</string>
+
+    <string name="edit_profile_toolbar_label">Modifica profilo</string>
+    <string name="special_needs_as_a_passenger">Esigenze particolari come passeggero</string>
+
+    <string name="already_rated">Hai già valutato questo utente</string>
+    <string name="music_allowed">Musica consentita</string>
+    <string name="travel_modes">Modalità di trasporto</string>
+    <string name="optimize_travel_solutions_by">Ottimizza le opzioni di tragitto secondo</string>
+    <string name="fastest">Più rapido</string>
+    <string name="travel_preferences_optional">Preferenze di viaggio (opzionale)</string>
+    <string name="carpooler_gender">Sesso del carpooler</string>
+    <string name="no_preference">Nessuna preferenza</string>
+    <string name="carpooler_age_range">Fascia d’età del carpooler</string>
+    <string name="carpooler_age_range_value">da 30 a 40</string>
+    <string name="special_needs">Esigenze particolari</string>
+    <string name="preferred_travel_mode_value">Bus</string>
+    <string name="max_nr_of_transfers">Numero massimo di trasferimenti</string>
+    <string name="max_cost">Costo massimo</string>
+    <string name="max_walk_distance">Distanza massima a piedi (metri)</string>
+    <string name="max_nr_of_transfers_value">3</string>
+    <string name="max_cost_value">6</string>
+
+    <string name="max_walk_distance_value">200m</string>
+    <string name="none">Non specificato</string>
+
+    <string name="gps_tracking">Localizzazione GPS</string>
+    <string name="smoking">Fumo</string>
+    <string name="food">Cibo</string>
+    <string name="music">Musica</string>
+    <string name="pets">Animali</string>
+    <string name="luggage">Bagagli</string>
+    <string name="departure_label">Partenza alle</string>
+    <string name="arrival_label">Arrivo entro</string>
+    <string name="done">Fatto</string>
+    <string name="cancel">Cancella</string>
+    <string name="depart_at">Partenza alle</string>
+    <string name="arrive_by">Arrivo entro</string>
+    <string name="signup_by_email">Registrarsi tramite email</string>
+    <string name="continue_by_email">Continua tramite email</string>
+    <string name="message_lift_updated_as_active">Il passaggio è stato accettato e il passeggero sarà notificato.</string>
+    <string name="message_lift_updated_as_cancelled"> Il passaggio è stato cancellato e il passeggero sarà notificato.</string>
+    <string name="message_lift_updated_as_refused"> Il passaggio è stato rifiutato e il passeggero sarà notificato.</string>
+    <string name="message_lift_updated">Il passaggio è stato caricato con successo.</string>
+
+    <string name="address_not_found">Nessuna corrispondenza trovata per l’indirizzo.</string>
+    <string name="book_now">Prenota ora</string>
+
+    <string-array name="drawer_items_titles">
+        <item>@string/home</item>
+        <item>@string/profile</item>
+        <item>@string/myLifts</item>
+        <item>@string/reports</item>
+        <item>@string/messages</item>
+        <item>@string/faq</item>
+        <item>@string/terms</item>
+        <item>@string/privacy</item>
+        <item>@string/contact_us</item>
+        <item>@string/logout</item>
+    </string-array>
+
+    <string-array name="array_gender">
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+
+    <string-array name="array_carpooler_age_range">
+        <item>18&#8211;30</item>
+        <item>30&#8211;40</item>
+        <item>40&#8211;50</item>
+        <item>50&#8211;60</item>
+    </string-array>
+
+    <string-array name="array_am_pm">
+        <item>am</item>
+        <item>pm</item>
+    </string-array>
+
+    <string-array name="array_yes_no">
+        <item>@string/yes</item>
+        <item>@string/no</item>
+    </string-array>
+
+    <string-array name="array_dialog_luggage_size">
+        <item>@string/small</item>
+        <item>@string/medium</item>
+        <item>@string/large</item>
+        <item>@string/no</item>
+    </string-array>
+
+    <string name="Large">Grande</string>
+    <string name="bus">Autobus</string>
+    <string name="departs_at">Partenza alle %1$s</string>
+
+
+    <string name="carpooling">Carpooling</string>
+
+    <string name="cheapest_route">Il più economico</string>
+
+    <string name="distance_meters">metri</string>
+
+    <string name="empty_filtered_list">Nessun risultato trovato</string>
+
+    <string name="error_during_get_address">Errore nell’individuazione dell’indirizzo! Riprova, per favore</string>
+
+    <string name="fastest_route">Il più veloce</string>
+
+    <string name="insert_address">Inserisci l’indirizzo</string>
+
+    <string name="no_reports_found">Nessuna segnalazione disponibile, per favore riprova più tardi</string>
+
+    <string name="preferred_traveling_mode">Modo di trasporto preferito</string>
+
+    <string name="privacy">Privacy policy</string>
+
+
+    <string name="report_category_accident">Incidente</string>
+
+    <string name="report_category_traffic">Traffico</string>
+
+    <string name="report_category_works">Lavori</string>
+
+    <string name="report_created_successfully_message">Segnalazione registrata con successo.\nInforma altre persone della tua segnalazione.</string>
+
+    <string name="report_next_button">Il prossimo</string>
+
+
+    <string name="report_severity_high">Elevato</string>
+    <string name="report_severity_low">Basso</string>
+    <string name="report_severity_medium">Ridotto</string>
+
+
+    <string name="reports">Condizioni del traffico</string>
+
+    <string name="send_report_button">Invia</string>
+
+    <string name="send_report_position_from">Da</string>
+    <string name="send_report_position_to">A (opzionale)</string>
+
+
+    <string name="send_report_title">Invia la segnalazione</string>
+
+    <string name="share_facebook">Condividi su Facebook</string>
+
+    <string name="share_on_facebook_error_message">Errore nella pubblicazione su Facebook. Per favore, riprova più tardi.</string>
+
+
+    <string name="share_on_facebook_success_message">Grazie per il post!</string>
+
+    <string name="sort_solutions_by">Ordina le soluzioni per</string>
+
+    <string name="subway">Metropolitana</string>
+
+    <string name="thanks_report">Grazie per il tuo tempo!</string>
+
+    <string name="train">Treno</string>
+    <string name="tram">Tram</string>
+
+    <string name="turn_on_gps_message">Per vedere le segnalazioni, devi attivare il GPS.</string>
+
+    <string name="walk">A piedi</string>
+
+    <string name="sign_up_accept_terms_conditions_error">Devi accettare le nostre condizioni d’uso.</string>
+
+    <string name="by_registering_you_agree_with_our">Registrandoti, accetti le nostre</string>
+    <string name="invalid_date_time">Inserisci una data e un\'ora corretta</string>
+    <string name="walk_towards">Camminare verso %1$s</string>
+    <string name="report_message">Su %1$s</string>
+    <string name="walk_towards_0_min">0 min</string>
+    <string name="confirm_password">Conferma Password</string>
+    <string name="pending">Sospeso</string>
+    <string name="cancelled">Cancellato</string>
+    <string name="active">Attivo</string>
+    <string name="terms_conditions">condizioni d’uso</string>
+    <string name="departure">Partenza</string>
+
+    <string name="waypoints_label">tappe</string>
+    <string name="add_waypoints">Aggiungi una tappa</string>
+    <string name="hint_insert_waypoint">Inserisci una tappa</string>
+
+    <plurals name="waypoints_quantity">
+        <item quantity="one">%d tappa</item>
+        <item quantity="other">%d tappe</item>
+    </plurals>
+
+    <string name="no_routes_found_error">Nessun percorso trovato. Per favore riprova.</string>
+
+    <string name="messages">Messaggi</string>
+
+    <string name="enable">Abilita</string>
+
+    <string name="choose_trip_type">Scegli il tipo di viaggio</string>
+    <string name="currently_recording">Registrazione in corso&#8230;</string>
+
+    <string name="save_trip">Salva</string>
+    <string name="dialog_save_trip">Vuoi salvare il viaggio registrato?</string>
+
+    <string name="mapped_trip">Viaggio mappato</string>
+    <string name="mapped_trip_description">Durante la creazione del viaggio, potrai aggiungere una o piu\' tappe.</string>
+    <string name="live_recorded_trip">Registrazione live</string>
+    <string name="live_recorded_trip_description">Scegli questa modalita\' per creare un viaggio in base al percorso su cui stai guidando.</string>
+    <string name="start_recording_label">Premi il pulsante play\nper iniziare la registrazione</string>
+    <string name="resume_recording_label">Premi il pulsante play\nper riprendere la registrazione</string>
+    <string name="resume_recording_trip">Riprendi</string>
+    <string name="delete_recorded_trip">Elimina</string>
+    <string name="delete_recorded_trip_message">Il viaggio registrato e\' stato eliminato</string>
+
+    <string name="trip_preview">Anteprima viaggio</string>
+    <string name="turn_on_gps_message_trip_recording">Per registrare il viaggio, devi abilitare il GPS.</string>
+
+    <string name="live_recorded_hint"><b>NOTA:</b> Per registrare correttamente il viaggio, assicurati che l\'applicazione sia sempre in primo piano.</string>
+
+    <string name="title_dialog_back_trip_recording">Abbandonare la registrazione?</string>
+    <string name="message_dialog_back_trip_recording">Uscendo da questa modalità la registrazione di questo viaggio verrà cancelata.</string>
+
+    <string name="recorded_trip_too_short">Il viaggio registrato è troppo breve</string>
+
+    <string name="hint_send_message">Scrivi qualcosa</string>
+
+    <string name="yestarday">Ieri</string>
+</resources>

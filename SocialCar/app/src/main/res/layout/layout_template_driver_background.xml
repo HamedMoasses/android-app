@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_no_lifts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:visibility="gone">
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/text_view_template_background"
+        style="@style/list_item_defined_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/h_spacing"
+        android:gravity="center_horizontal"
+        android:text="@string/text_became_new_driver"
+        android:textSize="@dimen/body_2" />
+
+    <ImageView
+        android:id="@+id/image_view_template_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:src="@mipmap/img_new_driver" />
+
+    <eu.h2020.sc.utils.MaterialRippleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/m_spacing"
+        android:layout_marginTop="@dimen/m_spacing"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="@color/white"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+
+        <Button
+            android:id="@+id/btn_template_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_accent"
+            android:text="@string/btn_become_driver"
+            android:textColor="@color/white" />
+
+    </eu.h2020.sc.utils.MaterialRippleLayout>
+</LinearLayout>

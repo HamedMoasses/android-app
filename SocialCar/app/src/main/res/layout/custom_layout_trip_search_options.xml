@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_trip_search_options"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/btn_cancel_trip_search_options"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/m_spacing"
+        android:layout_toStartOf="@+id/btn_done_trip_search_options"
+        android:clickable="true"
+        android:onClick="hideLayoutTripSearchOptions"
+        android:text="@string/cancel"
+        android:textColor="@color/secondary_text_color" />
+
+    <Button
+        android:id="@+id/btn_done_trip_search_options"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toStartOf="@dimen/s_spacing"
+        android:clickable="true"
+        android:onClick="setTripSearchOptions"
+        android:text="@string/done"
+        android:textColor="@color/primary_color" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/m_height">
+
+        <LinearLayout
+            android:id="@+id/travelingModes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <eu.h2020.sc.utils.TextViewCustom
+                android:id="@+id/travelingModeTitle"
+                style="@style/list_item_undefined_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/preferred_traveling_mode" />
+
+            <CheckBox
+                android:id="@+id/trip_options_checkbox_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xs_spacing"
+                android:layout_marginTop="@dimen/s_spacing"
+                android:paddingStart="@dimen/m_spacing"
+                android:text="@string/bus" />
+
+            <CheckBox
+                android:id="@+id/trip_options_checkbox_carpooling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xs_spacing"
+                android:layout_marginTop="@dimen/xs_spacing"
+                android:paddingStart="@dimen/m_spacing"
+                android:text="@string/carpooling" />
+
+            <CheckBox
+                android:id="@+id/trip_options_checkbox_subway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xs_spacing"
+                android:layout_marginTop="@dimen/xs_spacing"
+                android:paddingStart="@dimen/m_spacing"
+                android:text="@string/subway" />
+
+            <CheckBox
+                android:id="@+id/trip_options_checkbox_train"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xs_spacing"
+                android:layout_marginTop="@dimen/xs_spacing"
+                android:paddingStart="@dimen/m_spacing"
+                android:text="@string/train" />
+
+            <CheckBox
+                android:id="@+id/trip_options_checkbox_tram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xs_spacing"
+                android:paddingStart="@dimen/m_spacing"
+                android:text="@string/tram" />
+
+            <eu.h2020.sc.utils.TextViewCustom
+                android:id="@+id/sortingTitle"
+                style="@style/list_item_undefined_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:text="@string/sort_solutions_by" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s_spacing">
+
+                <RadioButton
+                    android:id="@+id/trip_options_sort_by_cheapest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:paddingStart="@dimen/m_spacing"
+                    android:text="@string/cheapest_route" />
+
+                <RadioButton
+                    android:id="@+id/trip_options_sort_by_fastest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/m_spacing"
+                    android:text="@string/fastest_route" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_layout_add_waypoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recycler_view_waypoints"
+        android:layout_marginBottom="-8dp">
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_waypoints"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/layout_add_new_wp"
+        android:background="@color/white"
+        android:overScrollMode="always"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/layout_add_new_wp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/hp_search_box"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/layout_add_waypoint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height"
+            android:layout_marginBottom="@dimen/s_spacing"
+            android:layout_marginTop="@dimen/s_spacing"
+            android:paddingLeft="@dimen/m_spacing"
+            android:paddingRight="@dimen/m_spacing">
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:id="@+id/ripple_layout_add_waypoint"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_height"
+                app:mrl_rippleAlpha="0.3"
+                app:mrl_rippleColor="@color/light_grey"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_add_waypoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s_height"
+                    android:background="@drawable/search_field_dark_bg"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/image_view_search_waypoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:tint="@color/secondary_text_color" />
+
+                    <View
+                        android:id="@+id/view_search_divider_start"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/image_view_search_waypoint"
+                        android:background="@color/light_grey" />
+
+                    <eu.h2020.sc.utils.TextViewCustom
+                        android:id="@+id/text_view_add_waypoint"
+                        style="@style/list_item_defined_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/s_spacing"
+                        android:layout_toRightOf="@+id/view_search_divider_start"
+                        android:ellipsize="end"
+                        android:hint="@string/hint_insert_waypoint"
+                        android:maxLines="1" />
+
+
+                </RelativeLayout>
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

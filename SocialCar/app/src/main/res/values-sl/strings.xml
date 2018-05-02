@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RideMyRoute</string>
+
+    <string name="url_faq">http://socialcar-project.eu/faq-si</string>
+    <string name="url_contact_us">http://socialcar-project.eu/contact-si</string>
+    <string name="url_terms">http://socialcar-project.eu/terms-si</string>
+
+    <string name="trip_solution_current_trips">Najdeni prevozi</string>
+    <string name="trip_solution_current_tripRequest">Prošnja za prevoz</string>
+
+    <!-- Sign UP ACTIVITY -->
+    <string name="password">Geslo</string>
+    <string name="add_image">DODAJ SLIKO</string>
+    <string name="your_personal_info">Druge informacije</string>
+    <string name="name">Ime</string>
+    <string name="email">Elektronski naslov</string>
+    <string name="phone">Telefon</string>
+    <string name="dob">Datum rojstva</string>
+    <string name="gender">Spol</string>
+    <string name="register">Registriraj se</string>
+    <string name="error_filled_field">Ustrezno izpolni vsa zahtevana polja</string>
+    <string name="choose">Izberi</string>>
+    <string name="step">Korak</string>
+    <string name="of">od</string>
+    <string name="complete_signup">Dokonèaj registracijo</string>
+    <string name="min6">Vsaj 6 znakov</string>
+
+    <string name="social">Družabno</string>
+    <string name="social_description">Odkleni veè funkcij\poveži se na svoj Facebook ali Google raèun!\</string>
+
+    <string name="new_driver_message">Kaže, da nisi registriran kot voznik.</string>
+    <string name="add_car">Dodaj avto</string>
+    <string name="become_a_driver">Postani voznik</string>
+
+
+    <string name="error_enable_permission_app">Omogoèi vsa dovoljenja za to aplikacijo</string>
+
+
+    <!-- Trip search -->
+    <string name="path">Pot</string>
+    <string name="set_starting_point">IZBERI ZAČETNO TOČKO</string>
+    <string name="starting_point">Zaèetna toèka potovanja</string>
+    <string name="set_destination_point">Izberi cilj potovanja</string>
+    <string name="destination_point">Cilj potovanja</string>
+    <string name="search_solutions">IŠČI MOŽNOSTI POTOVANJA</string>
+    <string name="label_continue">Nadaljuj</string>
+    <string name="hint_insert_starting">Vnesi začetni naslov</string>
+    <string name="hint_insert_destination">Vnesi ciljni naslov</string>
+    <string name="start_point_not_setted">Izberi zaèetno toèko</string>
+
+    <string name="note">Opomba</string>
+
+
+    <string name="tab_title_passenger">POTNIK</string>
+    <string name="tab_title_driver">VOZNIK</string>
+
+    <string name="male">Moški</string>
+    <string name="female">Ženska</string>
+
+    <string name="user_already_created">Uporabnik že obstaja! Prosim izberi drugega.</string>
+    <string name="no_solutions_found">Ni najdenih rezultatov.\nProsim poskusi znova.</string>
+
+    <string name="driver">Voznik</string>
+    <string name="solutions_toolbar_label">Rezultati</string>
+    <string name="waiting_time_toolbar_label">Èas èakanja</string>
+    <string name="solutions_details_toolbar_label">Podrobnosti</string>
+    <string name="accept_lift_toolbar_label">Prošnja za prevoz</string>
+    <string name="solutions_filters_label">Filtri</string>
+    <string name="solutions_departure_time_label">Odhod: SEDAJ</string>
+
+    <string name="ok">OK</string>
+    <string name="retry">Poskusi znova</string>
+    <string name="feedback_not_complete_error">Prosim, odgovori na vsa vprašanja.</string>
+    <string name="generic_error">Nekaj je šlo narobe.\nProsim poskusi znova.</string>
+    <string name="no_connection_error">Preveri internetno povezavo\nin poskusi znova.</string>
+    <string name="unauthorized_error">Prišlo je do napake!</string>
+    <string name="forgot_password">Pozabljeno geslo ?</string>
+    <string name="forgot_password_msg">Prosim nam pošljite e-poštno sporočilo &lt;a href="http://socialcar-project.eu/contact-si">Kontaktiraj nas&lt;/a></string>
+    <string name="signup">Registracija</string>
+    <string name="dont_have_account">Ali še nimaš uporabniškega raèuna?</string>
+    <string name="signin">Prijava</string>
+    <string name="no_rout_found">Ne najdem poti</string>
+
+    <string name="signin_facebook">Prijava preko Facebooka</string>
+    <string name="signin_google">Prijava preko Googla</string>
+    <string name="have_account">Ali si že registriran?</string>
+    <string name="signin_by_email">Prijavi se preko elektronskega naslova</string>
+
+    <string name="insert_email">Vnesi E-naslov</string>
+    <string name="insert_password">Vnesi geslo</string>
+    <string name="invalid_email_password">Neveljeven E-naslov ali geslo</string>
+    <string name="social_sign_in_or">ALI</string>
+    <string name="or">ALI</string>
+    <string name="car_info">Podatki o avtu</string>
+    <string name="additional_info">Dodatne informacije</string>
+    <string name="model">Model</string>
+    <string name="car_plate">Registrska tablica</string>
+    <string name="plate">Registrska tablica</string>
+    <string name="food_allowed">Hrana dovoljena</string>
+    <string name="smoking_allowed">Kajenje dovoljeno</string>
+    <string name="car_photos">Slika avtomobila</string>
+    <string name="air_conditioning">Klimatska naprava</string>
+    <string name="pets_allowed">Domaèe živali dovoljene</string>
+    <string name="luggage_allowed">Prtljaga dovoljena</string>
+    <string name="child_seat">Otroški sedež</string>
+    <string name="colour">Barva</string>
+    <string name="select_colour">Izberi barvo</string>
+    <string name="seat">Sedeži</string>
+    <string name="message_progress_dialog">Nalagam&#8230;</string>
+    <string name="send_request">Pošlji prošnjo</string>
+
+    <string name="lift_request">Prošnja za prevoz</string>
+    <string name="trip_accepted">Prevoz sprejet</string>
+    <string name="trip_declined">Prevoz zavrnjen</string>
+    <string name="trip_cancelled">Prevoz odpovedan</string>
+
+
+    <string name="accept_lift">Sprejmi</string>
+    <string name="decline_lift">Zavrni</string>
+    <string name="declined">Zavrnjen</string>
+    <string name="from">od</string>
+    <string name="to">do</string>
+    <string name="at_what_hour">\@</string>
+    <string name="open_navigation_drawer">Odpri navigacijski meni</string>
+    <string name="close_navigation_drawer">Zapri navigacijski meni</string>
+
+    <!-- Drawer Titles -->
+    <string name="home">Domov</string>
+    <string name="profile">Profil</string>
+    <string name="myLifts">Moji prevozi</string>
+    <string name="settings">Nastavitve</string>
+    <string name="faq">Pogosta vprašanja</string>
+    <string name="terms">Pogoji uporabe</string>
+    <string name="contact_us">Kontaktiraj nas</string>
+    <string name="logout">Odjava</string>
+    <string name="logout_dialog_text">Ali se želiš odjaviti?</string>
+
+
+    <string name="yes">Da</string>
+    <string name="no">Ne</string>
+
+
+    <string name="large">Veliko</string>
+    <string name="medium">Srednje</string>
+    <string name="small">Majhno</string>
+
+    <string name="trip_status_msg">Prosim sporoèi svoje mnenje</string>
+    <string name="tab_title_lift_requested">ZAHTEVANO</string>
+    <string name="tab_title_lift_offered">OFFERED</string>
+    <string name="active_trip">Aktivni prevoz</string>
+    <string name="cancelled_trip">Odpovedan prevoz</string>
+    <string name="completed_trip">Zakljuèen prevoz</string>
+    <string name="pending_trip">Prevoz na èakanju</string>
+    <string name="declined_trip">Zavrnjen prevoz</string>
+    <string name="message_cancelled_trip">Prevoz je bil odpovedan.</string>
+
+    <string name="text_no_trips_found">Ni najdenih prevozov.\n</string>
+    <string name="text_became_new_driver">Kaže, da nisi\nregistriran kot voznik.</string>
+    <string name="search_for_trips">Iskanje prevozov</string>
+    <string name="btn_become_driver">Postani voznik</string>
+    <string name="offer_trip">Ponudi prevoz</string>
+
+
+    <string name="google_play_service_error">Napaka v sistemu Google Play. Poskusi ponovno.</string>
+    <string name="google_play_service_not_available">Google Play storitev ni na voljo.</string>
+    <string name="status">Status:</string>
+
+    <string name="lift_status_pending_message">Še ni odgovora</string>
+    <string name="lift_status_accepted_message">Prošnja za prevoz je sprejeta</string>
+    <string name="lift_status_decline_message">Prošnja za prevoz je zavrnjena</string>
+    <string name="cancel_request">Odpovej prošnjo za prevoz</string>
+    <string name="cancel_request_confirmation_text">Želite odpovedati prošnjo za prevoz?</string>
+    <string name="sms">SMS sporoèilo</string>
+    <string name="call">Klic</string>
+    <string name="pending_lift_title">Prevoz na èakanju</string>
+    <string name="active_lift_title">Aktivni prevozi</string>
+    <string name="completed_lift_title">Zakljuèen prevoz</string>
+    <string name="cancelled_lift_title">Odpovedan prevoz</string>
+    <string name="declined_lift_title">Zavrnjeni prevoz</string>
+
+    <string name="invalid_search_ride_input">Neveljavna zaèetna ali konèna toèka potovanja</string>
+    <string name="enter_trip_name">Vpiši ime prevoza</string>
+    <string name="create_ride">Dodaj prevoz</string>
+    <string name="toolbar_label_new_trip">Nov prevoz</string>
+    <string name="pick_image_intent_text">Profilna slika</string>
+    <string name="login_info">Informacije o prijavi</string>
+    <string name="error_upload_picture">Prišlo je do napake pri nalaganju slike</string>
+
+    <string name="delete_ride_dialog_title">Izbriši prevoz?</string>
+    <string name="update_ride_dialog_title">Onemogoèi prevoz?</string>
+
+    <string name="ride_dialog_body_message">V primeru, da že imate potnike, bodo ti prejeli obvestilo.</string>
+
+
+    <string name="trip_deleted">Prevoz izbrisan</string>
+    <string name="undo_snackbar">RAZVELJAVI</string>
+
+    <string name="delete_trip">IZBRIŠI PREVOZ</string>
+    <string name="ride_message">Ob sprejetju prošnje za prevoz, bo tukaj razviden potnikova profilna slika.</string>
+    <string name="click_to_add_ride">Za objavo novega prevoza, pritisni na \"+\" </string>
+
+    <string name="at_date">ob</string>
+    <string name="on_date">na</string>
+
+    <string name="ride_activated">Prevoz je objavljen</string>
+    <string name="ride_disabled">Prevoz je odjavljen</string>
+    <string name="rating">Ocenjevanje</string>
+    <string name="wheelchair">Invalidski vozièek, slep</string>
+    <string name="public_feedback"> V pomoè ostalim uporabnikom bo tvoja ocena javna.</string>
+    <string name="ask_survey_text">Pomagaj ostalim uporabnikom. Zapiši nekaj o %1$s\ naèinu vožnje z izpolnitvijo kratkega vprašalnika.</string>
+
+    <string name="not_now">NE SEDAJ</string>
+
+    <string name="question_rating_title">Kakšna je bila tvoja izkušnja z %1$s?</string>
+
+    <!--Survey-->
+    <string name="survey_title">Vprašalnik</string>
+    <string name="thanks_survey">Hvala za tvoj odgovor</string>
+    <string name="question_survey_punctuation">Ali je bil %1$s toèen/-a?</string>
+    <string name="question_survey_satisfaction">Ali je bilo potovanje z %1$s prijetno?</string>
+    <string name="question_survey_comfort">Ali je bilo vozilo dovolj udobno?</string>
+    <string name="question_survey_duration">Ali je voznik upošteval dogovorjen èas prevoza?</string>
+    <string name="question_survey_route">Ali je %1$s peljal/-a po dogovorjeni poti?______</string>
+    <string name="question_survey_driver_behaviour">Kakšnen je bil naèin vožnje %1$s\?</string>
+    <string name="question_survey_carpooler_behaviour">Kakšno je bilo obnašanje %1$s\?</string>
+
+    <string name="min">min</string>
+    <string name="stops">postaje</string>
+    <string name="arriving">Prihod</string>
+
+    <string name="edit_profile_toolbar_label">Uredi profil</string>
+    <string name="special_needs_as_a_passenger">Posebne potrebe potnika</string>
+
+    <string name="already_rated">Uporabnika si že ocenil</string>
+    <string name="music_allowed">Glasba dovoljena</string>
+    <string name="travel_modes">Naèini potovanja</string>
+    <string name="optimize_travel_solutions_by">Razvrsti predlagane rezultate po</string>
+    <string name="fastest">najhitrejši</string>
+    <string name="travel_preferences_optional">Potovalne preference (opcijsko)</string>
+    <string name="carpooler_gender">po spolu sopotnika</string>
+    <string name="no_preference">Razvrsti poljubno</string>
+    <string name="carpooler_age_range">Starost voznika</string>
+    <string name="carpooler_age_range_value">30&#8211;40</string>
+    <string name="special_needs">Posebne potrebe</string>
+    <string name="preferred_travel_mode_value">Avtobus</string>
+    <string name="max_nr_of_transfers">Najveèje število prestopov</string>
+    <string name="max_cost">Najvišji stroški</string>
+    <string name="max_walk_distance">Najdaljša prehojena razdalja (v metrih)</string>
+    <string name="max_nr_of_transfers_value">3</string>
+    <string name="max_cost_value">6</string>
+    <string name="max_walk_distance_value">200m</string>
+    <string name="none">Niè</string>
+    <string name="gps_tracking">GPS sledenje</string>
+    <string name="smoking">Kajenje</string>
+    <string name="food">Hrana</string>
+    <string name="music">Glasba</string>
+    <string name="pets">Domaèe živali</string>
+    <string name="luggage">Prtljaga</string>
+    <string name="departure_label">Odhod ob</string>
+    <string name="arrival_label">Prihod do</string>
+    <string name="done">Izvedeno</string>
+    <string name="cancel">Razveljavi</string>
+    <string name="depart_at">Odhod ob</string>
+    <string name="arrive_by">Prihod do</string>
+    <string name="signup_by_email">Registracija preko elektronskega naslova</string>
+    <string name="continue_by_email">Nadaljuj z elektronskim naslovom</string>
+    <string name="message_lift_updated_as_active">Prevoz je bil sprejet in potnik bo obvešèen</string>
+    <string name="message_lift_updated_as_cancelled">Prevoz je bil odpovedan in potnik bo obvešèen.</string>
+    <string name="message_lift_updated_as_refused">Prevoz je zavrnjen in potnik bo obvešèen.</string>
+    <string name="message_lift_updated">Posodobitev prevoza je bila uspešno izvedena.</string>
+
+    <string name="address_not_found">Za navedeni naslov nismo našli nobenega ujemanja!</string>
+    <string name="book_now">Rezervirajte zdaj</string>
+    <string name="Large">Veliko</string>
+
+    <string-array name="drawer_items_titles">
+        <item>@string/home</item>
+        <item>@string/profile</item>
+        <item>@string/myLifts</item>
+        <item>@string/reports</item>
+        <item>@string/messages</item>
+        <item>@string/terms</item>
+        <item>@string/privacy</item>
+        <item>@string/contact_us</item>
+        <item>@string/logout</item>
+    </string-array>
+
+    <string-array name="array_gender">
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+
+    <string-array name="array_carpooler_age_range">
+        <item>18&#8211;30</item>
+        <item>30&#8211;40</item>
+        <item>40&#8211;50</item>
+        <item>50&#8211;60</item>
+    </string-array>
+
+    <string-array name="array_am_pm">
+        <item>am</item>
+        <item>pm</item>
+    </string-array>
+
+    <string-array name="array_yes_no">
+        <item>@string/yes</item>
+        <item>@string/no</item>
+    </string-array>
+
+    <string-array name="array_dialog_luggage_size">
+        <item>@string/small</item>
+        <item>@string/medium</item>
+        <item>@string/large</item>
+        <item>@string/no</item>
+    </string-array>
+
+    <string name="bus">Avtobus</string>
+
+    <string name="error_during_get_address">Napaka pri iskanju naslova! Prosim, poskusi ponovno</string>
+
+    <string name="fastest_route">Najhitreje</string>
+
+    <string name="insert_address">Vpiši naslov</string>
+
+    <string name="no_reports_found">Ni najdenih rezultatov, prosim poskusi kasneje.</string>
+
+    <string name="preferred_traveling_mode">Priljubljeni način</string>
+
+    <string name="privacy">Politika zasebnosti</string>
+
+
+    <string name="report_category_accident">Nesreča</string>
+
+    <string name="report_category_traffic">Promet</string>
+
+    <string name="report_category_works">Delo</string>
+
+    <string name="report_created_successfully_message">Poročilo je bilo uspešno registrirano.\nDelite z drugimi vase poročilo.</string>
+
+    <string name="report_next_button">Naslednji</string>
+
+
+    <string name="report_severity_high">Gost</string>
+    <string name="report_severity_low">Nizek</string>
+    <string name="report_severity_medium">Srednji</string>
+
+    <string name="reports">Stanje prometa</string>
+    <string name="send_report_button">Poslano</string>
+
+    <string name="send_report_position_from">Od</string>
+    <string name="send_report_position_to">Do (opcijsko)</string>
+
+
+    <string name="send_report_title">Pošlji poročilo</string>
+    <string name="share_facebook">Deli na Facebooku</string>
+    <string name="share_on_facebook_error_message">Napaka pri pošiljanju na Facebook. Poskusi ponovno kasneje.</string>
+
+
+    <string name="share_on_facebook_success_message">Hvala za sporočilo!</string>
+    <string name="sort_solutions_by">Sortiraj rezultate po</string>
+    <string name="subway">Podzemna železnica</string>
+    <string name="thanks_report">Hvala za vaš čas!</string>
+    <string name="train">Vlak</string>
+    <string name="tram">Tramvaj</string>
+
+    <string name="turn_on_gps_message">Za vpogled v rezultate morate vklopiti GPS.</string>
+    <string name="walk">Hoja</string>
+    <string name="sign_up_accept_terms_conditions_error">Strinjati se morate z našimi pogoji uporabe.</string>
+
+    <string name="by_registering_you_agree_with_our">Z registracijo se strinjate z našimi</string>
+    <string name="carpooling">Souporaba avtomobila</string>
+    <string name="cheapest_route">Najceneje</string>
+    <string name="distance_meters">meters</string>
+    <string name="empty_filtered_list">Ni najdenih rezultatov, prosim poskusi kasneje.</string>
+    <string name="departs_at">Odhod na %1$s</string>
+    <string name="invalid_date_time">Prosimo, vstavite veljaven datum in uro</string>
+    <string name="walk_towards">Hoditi proti %1$s</string>
+    <string name="report_message">Na %1$s</string>
+    <string name="walk_towards_0_min">0 min</string>
+    <string name="confirm_password">Potrdi Geslo</string>
+    <string name="pending">Pending</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="active">Active</string>
+    <string name="terms_conditions">pogoji uporabe</string>
+    <string name="departure">Odhod</string>
+
+    <string name="waypoints_label">bodov</string>
+    <string name="add_waypoints">Pridajte priechodné body</string>
+    <string name="hint_insert_waypoint">Pridajte priechodné body</string>
+
+    <plurals name="waypoints_quantity">
+        <item quantity="one">%d punten toe</item>
+        <item quantity="two">%d punten toe</item>
+        <item quantity="few">%d punten toe</item>
+    </plurals>
+
+    <string name="no_routes_found_error">No routes were found. Please try again.</string>
+
+</resources>

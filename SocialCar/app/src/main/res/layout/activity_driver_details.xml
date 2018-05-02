@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_layout_driver_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="eu.h2020.sc.ui.home.driver.DriverDetailsActivity">
+
+    <ImageView
+        android:id="@+id/driver_details_image_view_car"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="209dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img_default_car"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scrollViewDriverDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="209dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <FrameLayout
+                android:id="@+id/frame_layout_car"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#3396145c" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/h_spacing"
+                    android:background="@drawable/white_rounded_bg"
+                    android:paddingBottom="@dimen/m_spacing"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="@dimen/m_spacing">
+
+                    <eu.h2020.sc.utils.TextViewCustom
+                        android:id="@+id/textView_car_model"
+                        style="@style/caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/s_spacing"
+                        android:textAllCaps="true"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/body_1"
+                        android:textStyle="bold" />
+
+                    <eu.h2020.sc.utils.TextViewCustom
+                        android:id="@+id/textView_car_plate"
+                        style="@style/list_item_undefined_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_car_model"
+                        android:layout_marginTop="@dimen/m_spacing"
+                        android:text="@string/plate" />
+
+                    <eu.h2020.sc.utils.TextViewCustom
+                        android:id="@+id/textView_color"
+                        style="@style/list_item_undefined_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_car_plate"
+                        android:layout_marginTop="@dimen/s_spacing"
+                        android:text="@string/colour" />
+
+                    <View
+                        android:id="@+id/view_car_color"
+                        android:layout_width="@dimen/s_height"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="@dimen/xs_spacing"
+                        android:layout_marginTop="73dp"
+                        android:layout_toRightOf="@+id/textView_color"
+                        android:background="@color/transparent" />
+
+                    <eu.h2020.sc.utils.TextViewCustom
+                        android:id="@+id/textView_car_seat"
+                        style="@style/list_item_undefined_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_color"
+                        android:layout_marginTop="@dimen/s_spacing"
+                        android:text="@string/seat" />
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/h_spacing"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/m_spacing" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/layout_driver_details_error_retry"
+        layout="@layout/layout_template_no_data_retry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutHeaderView"
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            android:background="@color/primary_color"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image_view_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/m_spacing"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:clickable="true"
+                android:onClick="goBack"
+                android:src="@drawable/ic_arrow_back_24dp" />
+
+            <ImageView
+                android:id="@+id/imageView_avatar"
+                android:layout_width="87dp"
+                android:layout_height="87dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:src="@mipmap/test_passenger_avatar" />
+
+            <eu.h2020.sc.utils.TextViewCustom
+                android:id="@+id/textView_driver_name"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView_avatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/s_spacing"
+                android:text="Giorgia Zippari"
+                android:textColor="@color/white" />
+
+            <eu.h2020.sc.utils.TextViewCustom
+                android:id="@+id/textView_driver_rating"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_driver_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/xs_spacing"
+                android:drawableLeft="@drawable/ic_star_13dp"
+                android:text="0 (4 feedback)"
+                android:textColor="#e8c5c5"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_user_actions"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shadow_box_user_actions"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:id="@+id/social_profile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_with_divider"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/medium_grey"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:id="@+id/image_view_social_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="showSocialProfile"
+                    android:src="@drawable/ic_facebook"
+                    android:tint="@color/dark_grey" />
+
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/medium_grey" />
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_with_divider"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/medium_grey"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="callDriver"
+                    android:src="@drawable/ic_call_24dp"
+                    android:tint="@color/dark_grey" />
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/medium_grey" />
+
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_google"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/medium_grey"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="sendSMSToDriver"
+                    android:src="@drawable/ic_sms_24dp"
+                    android:tint="@color/dark_grey" />
+
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8F000000"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/add_rating_layout_feedback_container_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/m_spacing"
+        android:layout_marginRight="@dimen/m_spacing"
+        android:background="@drawable/card"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="19dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/img_add_rating_bg" />
+
+            <eu.h2020.sc.utils.TextViewCustom
+                android:id="@+id/add_rating_layout_name_reviewed_text"
+                style="@style/add_rating_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="10dp"
+                android:text="Annachiara Baresi"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/passenger_details_rating_imageview"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_above="@+id/add_rating_layout_feedback_container_linear_layout"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/drawer_avatar_stroke"
+                android:minHeight="72dp"
+                android:minWidth="72dp"
+                android:scaleType="centerCrop" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/add_rating_layout_stars_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/add_rating_star_1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_star_add_rating_border" />
+
+            <ImageView
+                android:id="@+id/add_rating_star_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="38dp"
+                android:src="@drawable/ic_star_add_rating_border" />
+
+            <ImageView
+                android:id="@+id/add_rating_star_3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="38dp"
+                android:src="@drawable/ic_star_add_rating_border" />
+
+            <ImageView
+                android:id="@+id/add_rating_star_4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="38dp"
+                android:src="@drawable/ic_star_add_rating_border" />
+
+            <ImageView
+                android:id="@+id/add_rating_star_5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="38dp"
+                android:src="@drawable/ic_star_add_rating_border" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/add_rating_layout_add_feedback_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/h_spacing"
+            android:layout_marginRight="@dimen/h_spacing">
+
+            <EditText
+                android:id="@+id/add_rating_layout_feedback_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Feedback" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/add_rating_layout_send_button"
+            android:layout_width="72dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/m_spacing"
+            android:layout_marginRight="@dimen/m_spacing"
+            android:layout_marginTop="@dimen/m_spacing"
+            android:background="@color/transparent"
+            android:text="SEND"
+            android:textColor="@color/primary_color"
+            tools:background="@color/transparent" />
+
+        <LinearLayout
+            android:id="@+id/add_rating_layout_ask_survey_text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/h_spacing"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h_spacing"
+                android:src="@mipmap/img_survey" />
+
+            <eu.h2020.sc.utils.TextViewCustom
+                android:id="@+id/add_rating_layout_ask_survey_text"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/m_spacing"
+                android:layout_marginRight="@dimen/h_spacing"
+                android:layout_marginTop="@dimen/xs_spacing" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/add_rating_layout_buttons_survey_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/m_spacing"
+            android:layout_marginRight="@dimen/m_spacing"
+            android:layout_marginTop="@dimen/m_spacing"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/add_rating_layout_survey_not_now_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_toLeftOf="@+id/add_rating_layout_survey_ok_button"
+                android:background="@color/transparent"
+                android:elevation="1dp"
+                android:text="@string/not_now"
+                android:textColor="@color/primary_color"
+                tools:background="@color/transparent" />
+
+            <Button
+                android:id="@+id/add_rating_layout_survey_ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:elevation="1dp"
+                android:text="@string/ok"
+                android:textColor="@color/primary_color"
+                tools:background="@color/transparent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

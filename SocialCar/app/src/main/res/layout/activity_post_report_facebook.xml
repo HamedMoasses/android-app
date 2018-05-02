@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="eu.h2020.sc.ui.reports.creation.PostReportFacebookActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/m_spacing"
+            android:onClick="closeActivity"
+            android:src="@drawable/ic_close_white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/xxh_spacing"
+            android:layout_marginTop="@dimen/xxh_spacing"
+            android:src="@mipmap/img_report_submitted" />
+
+    </RelativeLayout>
+
+    <eu.h2020.sc.utils.TextViewCustom
+        style="@style/list_item_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/xh_spacing"
+        android:text="@string/thanks_report" />
+
+
+    <eu.h2020.sc.utils.TextViewCustom
+        style="@style/list_item_defined_bold_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/s_spacing"
+        android:gravity="center"
+        android:text="@string/report_created_successfully_message" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/m_spacing">
+
+        <eu.h2020.sc.utils.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/s_height"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/logo_fb"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="@color/transparent_white"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <TextView
+                style="@style/list_item_defined_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_height"
+                android:layout_marginStart="-2dp"
+                android:background="@drawable/btn_fb"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="postOnFacebook"
+                android:paddingEnd="@dimen/m_spacing"
+                android:paddingStart="@dimen/m_spacing"
+                android:text="@string/share_facebook"
+                android:textColor="@color/white" />
+        </eu.h2020.sc.utils.MaterialRippleLayout>
+
+        <ImageView
+            android:id="@+id/logo_fb"
+            android:layout_width="@dimen/s_height"
+            android:layout_height="@dimen/s_height"
+            android:layout_marginEnd="-2dp"
+            android:background="@drawable/btn_fb_stroke_filled"
+            android:padding="12dp"
+            android:src="@drawable/ic_facebook_24dp"
+            android:tint="@color/white_google" />
+    </RelativeLayout>
+</LinearLayout>

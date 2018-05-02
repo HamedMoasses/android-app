@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_google"
+    android:fitsSystemWindows="true"
+    tools:context="eu.h2020.sc.ui.home.driver.becomedriver.BecomeDriverActivity">
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/m_height">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s_spacing"
+            android:layout_marginRight="@dimen/s_spacing"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/m_spacing">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/s_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/medium_grey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/m_spacing"
+                    android:layout_marginRight="@dimen/m_spacing"
+                    android:text="@string/car_info"
+                    android:textColor="@color/medium_grey"
+                    android:textSize="@dimen/caption"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/medium_grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/m_spacing">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/m_spacing"
+                    android:paddingRight="@dimen/m_spacing"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/editTextModel"
+                        style="@style/signup_editText_theme"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m_height"
+                        android:layout_marginRight="@dimen/m_spacing"
+                        android:layout_weight="0.80"
+                        android:drawableLeft="@drawable/ic_car_24dp"
+                        android:drawablePadding="@dimen/s_spacing"
+                        android:drawableStart="@drawable/ic_car_24dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/model"
+                        android:inputType="textCapWords"
+                        android:singleLine="true" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m_height"
+                        android:layout_weight="1.20"
+                        android:clickable="true"
+                        android:onClick="showDialogColour"
+                        android:paddingLeft="@dimen/xs_spacing"
+                        android:paddingRight="@dimen/xs_spacing">
+
+                        <ImageView
+                            android:id="@+id/imagePalette"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_colour_24dp" />
+
+                        <TextView
+                            android:id="@+id/textViewColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/s_spacing"
+                            android:layout_toRightOf="@+id/imagePalette"
+                            android:text="@string/colour"
+                            android:textColor="@color/medium_grey"
+                            android:textSize="@dimen/body_1" />
+
+                        <View
+                            android:id="@+id/viewChoosedColor"
+                            android:layout_width="@dimen/s_height"
+                            android:layout_height="24dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/m_spacing"
+                            android:layout_toRightOf="@+id/imagePalette"
+                            android:background="@color/transparent"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/divider_height"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/s_spacing"
+                            android:background="@color/medium_grey" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/m_spacing"
+                    android:paddingRight="@dimen/m_spacing"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/editTextCarPlate"
+                        style="@style/signup_editText_theme"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m_height"
+                        android:layout_marginRight="@dimen/m_spacing"
+                        android:layout_weight="0.80"
+                        android:drawableLeft="@drawable/ic_car_plate_24dp"
+                        android:drawablePadding="@dimen/s_spacing"
+                        android:drawableStart="@drawable/ic_car_plate_24dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/car_plate"
+                        android:inputType="textCapCharacters"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextSeat"
+                        style="@style/signup_editText_theme"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m_height"
+                        android:layout_weight="1.20"
+                        android:drawableLeft="@drawable/seat_legroom_normal"
+                        android:drawablePadding="@dimen/s_spacing"
+                        android:gravity="center_vertical"
+                        android:hint="@string/seat"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textSize="@dimen/body_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/s_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/medium_grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/m_spacing"
+                        android:layout_marginRight="@dimen/m_spacing"
+                        android:text="@string/additional_info"
+                        android:textColor="@color/medium_grey"
+                        android:textSize="@dimen/caption"
+                        android:textStyle="italic" />
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/medium_grey" />
+                </LinearLayout>
+
+                <eu.h2020.sc.utils.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/medium_grey"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutFoodAllowed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showDialogCarPref"
+                        android:paddingLeft="@dimen/m_spacing"
+                        android:paddingRight="@dimen/m_spacing"
+                        android:paddingTop="@dimen/m_spacing">
+
+                        <ImageView
+                            android:id="@+id/imageFoodAllowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/s_spacing"
+                            android:layout_marginRight="@dimen/m_spacing"
+                            android:src="@drawable/ic_food_24dp" />
+
+                        <TextView
+                            android:id="@+id/textViewLabelFoodAllowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/imageFoodAllowed"
+                            android:text="@string/food_allowed"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/body_1" />
+
+                        <eu.h2020.sc.utils.TextViewCustom
+                            android:id="@+id/textViewFoodAllowed"
+                            style="@style/list_item_defined_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewLabelFoodAllowed"
+                            android:layout_toRightOf="@+id/imageFoodAllowed"
+                            android:paddingBottom="@dimen/m_spacing"
+                            android:text="@string/no"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body_2" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/divider_height"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/medium_grey" />
+                    </RelativeLayout>
+
+                </eu.h2020.sc.utils.MaterialRippleLayout>
+
+                <eu.h2020.sc.utils.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/medium_grey"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutSmokingAllowed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showDialogCarPref"
+                        android:paddingLeft="@dimen/m_spacing"
+                        android:paddingRight="@dimen/m_spacing"
+                        android:paddingTop="@dimen/m_spacing">
+
+                        <ImageView
+                            android:id="@+id/imageSmokingAllowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/s_spacing"
+                            android:layout_marginRight="@dimen/m_spacing"
+                            android:src="@drawable/smoking" />
+
+                        <TextView
+                            android:id="@+id/textViewLabelSmokingAllowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/imageSmokingAllowed"
+                            android:text="@string/smoking_allowed"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/body_1" />
+
+                        <TextView
+                            android:id="@+id/textViewSmokingAllowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewLabelSmokingAllowed"
+                            android:layout_toRightOf="@+id/imageSmokingAllowed"
+                            android:paddingBottom="@dimen/m_spacing"
+                            android:text="@string/no"
+                            android:textSize="@dimen/body_2" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/divider_height"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/medium_grey" />
+                    </RelativeLayout>
+                </eu.h2020.sc.utils.MaterialRippleLayout>
+
+                <eu.h2020.sc.utils.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/medium_grey"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutAirConditioning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showDialogCarPref"
+                        android:paddingLeft="@dimen/m_spacing"
+                        android:paddingRight="@dimen/m_spacing"
+                        android:paddingTop="@dimen/m_spacing">
+
+                        <ImageView
+                            android:id="@+id/imageAirConditioning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/s_spacing"
+                            android:layout_marginRight="@dimen/m_spacing"
+                            android:src="@drawable/ic_air_conditioner_24dp" />
+
+                        <TextView
+                            android:id="@+id/textViewLabelAirConditioning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/imageAirConditioning"
+                            android:text="@string/air_conditioning"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/body_1" />
+
+                        <TextView
+                            android:id="@+id/textViewAirConditioning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewLabelAirConditioning"
+                            android:layout_toRightOf="@+id/imageAirConditioning"
+                            android:paddingBottom="@dimen/m_spacing"
+                            android:text="@string/yes"
+                            android:textSize="@dimen/body_2" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/divider_height"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/medium_grey" />
+                    </RelativeLayout>
+                </eu.h2020.sc.utils.MaterialRippleLayout>
+
+                <eu.h2020.sc.utils.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/medium_grey"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutPetsAllowed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showDialogCarPref"
+                        android:paddingLeft="@dimen/m_spacing"
+                        android:paddingRight="@dimen/m_spacing"
+                        android:paddingTop="@dimen/m_spacing">
+
+                        <ImageView
+                            android:id="@+id/imagePetsAllowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/s_spacing"
+                            android:layout_marginRight="@dimen/m_spacing"
+                            android:src="@drawable/ic_cat_24dp" />
+
+                        <TextView
+                            android:id="@+id/textViewLabelPetsAllowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/imagePetsAllowed"
+                            android:text="@string/pets_allowed"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/body_1" />
+
+                        <TextView
+                            android:id="@+id/textViewPetsAllowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewLabelPetsAllowed"
+                            android:layout_toRightOf="@+id/imagePetsAllowed"
+                            android:paddingBottom="@dimen/m_spacing"
+                            android:text="@string/no"
+                            android:textSize="@dimen/body_2" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/divider_height"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/medium_grey" />
+                    </RelativeLayout>
+                </eu.h2020.sc.utils.MaterialRippleLayout>
+
+                <eu.h2020.sc.utils.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/medium_grey"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutLuggageAllowed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showDialogCarPref"
+                        android:paddingLeft="@dimen/m_spacing"
+                        android:paddingRight="@dimen/m_spacing"
+                        android:paddingTop="@dimen/m_spacing">
+
+                        <ImageView
+                            android:id="@+id/imageLuggageAllowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/s_spacing"
+                            android:layout_marginRight="@dimen/m_spacing"
+                            android:src="@drawable/ic_luggage_24dp" />
+
+                        <TextView
+                            android:id="@+id/textViewLabelLuggageAllowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/imageLuggageAllowed"
+                            android:text="@string/luggage_allowed"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/body_1" />
+
+                        <TextView
+                            android:id="@+id/textViewLuggageAllowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewLabelLuggageAllowed"
+                            android:layout_toRightOf="@+id/imageLuggageAllowed"
+                            android:paddingBottom="@dimen/m_spacing"
+                            android:text="@string/medium"
+                            android:textSize="@dimen/body_2" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/divider_height"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/medium_grey" />
+                    </RelativeLayout>
+                </eu.h2020.sc.utils.MaterialRippleLayout>
+
+                <eu.h2020.sc.utils.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/medium_grey"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutChildSeat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/m_spacing"
+                        android:clickable="true"
+                        android:onClick="showDialogCarPref"
+                        android:paddingLeft="@dimen/m_spacing"
+                        android:paddingRight="@dimen/m_spacing">
+
+                        <ImageView
+                            android:id="@+id/imageChildSeat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/s_spacing"
+                            android:layout_marginRight="@dimen/m_spacing"
+                            android:src="@drawable/ic_child_seat_light_grey_24dp" />
+
+                        <TextView
+                            android:id="@+id/textViewLabelChildSeat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/imageChildSeat"
+                            android:text="@string/child_seat"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/body_1" />
+
+                        <TextView
+                            android:id="@+id/textViewChildSeat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewLabelChildSeat"
+                            android:layout_toRightOf="@+id/imageChildSeat"
+                            android:paddingBottom="@dimen/m_spacing"
+                            android:text="No"
+                            android:textSize="@dimen/body_2" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/divider_height"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/medium_grey" />
+
+                    </RelativeLayout>
+                </eu.h2020.sc.utils.MaterialRippleLayout>
+
+                <eu.h2020.sc.utils.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/medium_grey"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutMusicAllowed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/m_spacing"
+                        android:clickable="true"
+                        android:onClick="showDialogCarPref"
+                        android:paddingLeft="@dimen/m_spacing"
+                        android:paddingRight="@dimen/m_spacing">
+
+                        <ImageView
+                            android:id="@+id/imageMusicAllowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/s_spacing"
+                            android:layout_marginRight="@dimen/m_spacing"
+                            android:src="@drawable/ic_music_note" />
+
+                        <TextView
+                            android:id="@+id/textViewLabelMusic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/imageMusicAllowed"
+                            android:text="@string/music_allowed"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/body_1" />
+
+                        <TextView
+                            android:id="@+id/textViewMusicAllowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewLabelMusic"
+                            android:layout_toRightOf="@+id/imageMusicAllowed"
+                            android:paddingBottom="@dimen/m_spacing"
+                            android:text="No"
+                            android:textSize="@dimen/body_2" />
+
+                    </RelativeLayout>
+                </eu.h2020.sc.utils.MaterialRippleLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/s_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/s_spacing"
+                    android:layout_marginTop="@dimen/s_spacing"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/medium_grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/m_spacing"
+                        android:layout_marginRight="@dimen/m_spacing"
+                        android:text="@string/car_photos"
+                        android:textColor="@color/medium_grey"
+                        android:textSize="@dimen/caption"
+                        android:textStyle="italic" />
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/medium_grey" />
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/m_spacing">
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="128dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/medium_grey"
+                        android:textSize="@dimen/toolbar_title" />
+
+                    <ImageView
+                        android:id="@+id/signup_driver_car_image_view"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/border_dotted_shape"
+                        android:gravity="center"
+                        android:onClick="pickCarImage" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

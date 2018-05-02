@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eu.h2020.sc.ui.signup.SignUpConnectSocialActivity">
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/social_description_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/m_spacing"
+        android:gravity="center_horizontal"
+        android:text="@string/social_description"
+        android:textColor="@color/secondary_text_color" />
+
+    <LinearLayout
+        android:id="@+id/layout_social_logos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/social_description_text_view"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="facebookSignIn"
+            android:src="@mipmap/signup_link_fb_acc" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="googleSignIn"
+            android:src="@mipmap/signup_link_gplus_acc" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_social_logos"
+        android:layout_marginBottom="@dimen/h_spacing"
+        android:layout_marginTop="@dimen/h_spacing"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="1dp"
+            android:background="@color/dark_grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/h_spacing"
+            android:layout_marginRight="@dimen/h_spacing"
+            android:text="@string/or"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/body_1"
+            android:textStyle="italic" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="1dp"
+            android:background="@color/dark_grey" />
+
+    </LinearLayout>
+
+    <eu.h2020.sc.utils.MaterialRippleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/s_height"
+        android:layout_below="@+id/linear_layout_or"
+        android:layout_centerHorizontal="true"
+        app:mrl_rippleAlpha="0.4"
+        app:mrl_rippleColor="@color/medium_grey"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+
+        <Button
+            style="@style/list_item_undefined_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/s_height"
+            android:background="@drawable/btn_primary_color_stroke_no_background"
+            android:onClick="goToSignUp"
+            android:paddingLeft="@dimen/m_spacing"
+            android:paddingRight="@dimen/m_spacing"
+            android:text="@string/continue_by_email"
+            android:textColor="@color/primary_color"
+            android:textSize="14sp" />
+
+    </eu.h2020.sc.utils.MaterialRippleLayout>
+
+</RelativeLayout>

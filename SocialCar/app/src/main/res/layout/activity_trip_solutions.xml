@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eu.h2020.sc.ui.trip.solution.TripSolutionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/main_toolbar"
+            layout="@layout/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_color"
+            android:paddingBottom="@dimen/s_spacing"
+            android:paddingLeft="@dimen/m_spacing"
+            android:paddingTop="@dimen/s_spacing">
+
+
+            <TextView
+                android:id="@+id/lift_details_text_view_from"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_height"
+                android:drawableLeft="@drawable/ic_solutions_departure_address_24dp"
+                android:drawablePadding="20dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingRight="68dp"
+                android:singleLine="true"
+                android:text="Viale Umberto Lupini 80-88, Roma"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:tint="@color/white" />
+
+            <View
+                android:id="@+id/divider_solutions_params"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_below="@+id/lift_details_text_view_from"
+                android:layout_marginLeft="35dp"
+                android:background="@color/accent_color" />
+
+            <TextView
+                android:id="@+id/lift_details_text_view_to"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_height"
+                android:layout_below="@+id/divider_solutions_params"
+                android:drawableLeft="@drawable/ic_solutions_arriving_address_24dp"
+                android:drawablePadding="20dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingRight="68dp"
+                android:singleLine="true"
+                android:text="Via Tiburtina 201, Roma"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <ImageView
+                android:id="@+id/image_view_invert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/solutions_invert_shape"
+                android:onClick="invertAddressRequest"
+                android:src="@drawable/ic_invert_30dp"
+                android:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height"
+            android:background="@color/primary_dark_color"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/white"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/trip_date_time_label"
+                    style="@style/caption_primary_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:onClick="showLayoutTripTimeSelection"
+                    android:paddingLeft="@dimen/m_spacing"
+                    android:paddingRight="@dimen/m_spacing"
+                    android:text="@string/solutions_departure_time_label"
+                    android:textColor="@color/white" />
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/white"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    style="@style/caption_primary_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:gravity="center_vertical|right"
+                    android:onClick="showLayoutTripSearchOptions"
+                    android:paddingLeft="@dimen/m_spacing"
+                    android:paddingRight="@dimen/m_spacing"
+                    android:text="@string/solutions_filters_label"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_grey">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_solutions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_list_solutions"
+                style="?android:progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/accent_color"
+                android:visibility="gone" />
+
+
+            <include
+                android:id="@+id/layout_trip_solutions_error_retry"
+                layout="@layout/layout_template_no_data_retry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_trip_date_time_selection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="16dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/date_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h_spacing"
+                android:layout_marginRight="@dimen/h_spacing"
+                android:paddingTop="@dimen/h_spacing">
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/textview_tab_trip_start_date"
+                    style="@style/caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selected_bottom_border"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="prepareTabDepartureAt"
+                    android:text="@string/departure_label"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary_color"
+                    android:textSize="@dimen/body_2" />
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/textview_tab_trip_end_date"
+                    style="@style/caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bottom_border"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="prepareTabArriveBy"
+                    android:text="@string/arrival_label"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/body_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/timePickersContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_tabs"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/h_spacing"
+                android:gravity="center_horizontal">
+
+                <NumberPicker
+                    android:id="@+id/hourPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:solidColor="@color/transparent" />
+
+                <TextView
+                    android:id="@+id/pickers_devider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/xs_spacing"
+                    android:text=":" />
+
+                <NumberPicker
+                    android:id="@+id/minutesPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:solidColor="@color/transparent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/xs_spacing"
+                    android:text="" />
+
+                <NumberPicker
+                    android:id="@+id/picker_am_pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:solidColor="@color/transparent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/datePickerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timePickersContainer"
+                android:layout_marginLeft="@dimen/h_spacing"
+                android:layout_marginRight="@dimen/h_spacing"
+                android:layout_marginTop="@dimen/h_spacing"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/md_divider_black" />
+
+                <eu.h2020.sc.utils.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:mrl_rippleAlpha="0.3"
+                    app:mrl_rippleColor="@color/dark_grey"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <TextView
+                        android:id="@+id/trip_solution_date_picker_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m_height"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="showDatePickerDialog"
+                        android:text="12/07/2017" />
+
+                </eu.h2020.sc.utils.MaterialRippleLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/md_divider_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/datePickerContainer"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_marginRight="@dimen/s_spacing"
+                android:layout_marginTop="@dimen/m_spacing">
+
+                <Button
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/m_spacing"
+                    android:clickable="true"
+                    android:onClick="hideLayoutTripTimeSelection"
+                    android:text="@string/cancel"
+                    android:textColor="@color/secondary_text_color" />
+
+                <Button
+                    android:id="@+id/btn_set_trip_start_date"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="setTripStartDate"
+                    android:text="@string/done"
+                    android:textColor="@color/primary_color" />
+
+                <Button
+                    android:id="@+id/btn_set_trip_end_date"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="setTripEndDate"
+                    android:text="@string/done"
+                    android:textColor="@color/primary_color"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

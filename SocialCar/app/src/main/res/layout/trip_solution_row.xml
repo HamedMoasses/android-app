@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayoutRowRealtime"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:clickable="true"
+    android:background="@color/white"
+    android:visibility="visible">
+
+    <eu.h2020.sc.utils.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:mrl_rippleColor="@color/medium_grey"
+        android:clickable="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+
+        <LinearLayout
+            android:id="@+id/childLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height"
+            android:layout_marginLeft="@dimen/m_spacing"
+            android:layout_marginRight="@dimen/s_spacing"
+            android:layout_marginTop="@dimen/xs_spacing"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/text_view_line_route_name"
+                    style="@style/list_item_defined_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableEnd="@drawable/ic_clock_24dp"
+                    android:drawableLeft="@drawable/ic_clock_24dp"
+                    android:drawablePadding="@dimen/s_spacing"
+                    android:drawableRight="@drawable/ic_solutions_circle_divider_8dp"
+                    android:drawableStart="@drawable/ic_solutions_circle_divider_8dp"
+                    android:gravity="center_vertical"
+                    android:text="20 min" />
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/text_view_remaining_stops"
+                    style="@style/list_item_defined_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/s_spacing"
+                    android:gravity="center_vertical"
+                    android:text="15:30 - 16:50" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/divider_height"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/xs_spacing"
+                android:layout_marginTop="@dimen/xs_spacing"
+                android:background="@color/medium_grey" />
+
+            <eu.h2020.sc.utils.TextViewCustom
+                android:id="@+id/text_view_waiting_time_minutes"
+                style="@style/caption_primary_color"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="€3.50"
+                android:textSize="@dimen/body_1" />
+
+        </LinearLayout>
+    </eu.h2020.sc.utils.MaterialRippleLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/s_spacing"
+        android:layout_marginRight="@dimen/s_spacing"
+        android:background="@color/medium_grey" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/xxh_spacing"
+        android:fillViewport="true"
+        android:foregroundGravity="right"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/s_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/m_spacing"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/h_spacing">
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</FrameLayout>

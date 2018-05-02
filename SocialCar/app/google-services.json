@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "963749336466",
+    "firebase_url": "https://cities-share-passengers-edb7f.firebaseio.com",
+    "project_id": "cities-share-passengers-edb7f",
+    "storage_bucket": "cities-share-passengers-edb7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963749336466:android:3f92db201394a654",
+        "android_client_info": {
+          "package_name": "eu.h2020.sc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963749336466-5v7oa3m2ucjrugtcll9eg9h9a9vtnn8m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eu.h2020.sc",
+            "certificate_hash": "8df9fffe8baa58bbaf285bbb798be4c152287890"
+          }
+        },
+        {
+          "client_id": "963749336466-nqfk4sg2sujn4s75qhdbc5ovah3kdh3q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMgvaT2c6WM_7a9ZCzELiDLQicAJ9ExFs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963749336466-nqfk4sg2sujn4s75qhdbc5ovah3kdh3q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

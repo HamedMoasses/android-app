@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:gravity="center_vertical"
+    android:background="@color/light_grey"
+    android:visibility="gone">
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/no_data_text_view"
+        style="@style/list_item_defined_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/m_spacing"
+        android:gravity="center"
+        android:text="@string/generic_error"
+        android:textSize="@dimen/body_2" />
+
+    <Button
+        android:id="@+id/btn_no_data_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_data_text_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_rounded_corners_white_bg"
+        android:text="@string/retry"
+        android:textColor="@color/primary_text_color" />
+</RelativeLayout>

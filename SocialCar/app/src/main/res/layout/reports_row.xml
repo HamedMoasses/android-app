@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/s_spacing"
+    android:layout_marginRight="@dimen/s_spacing"
+    android:background="@drawable/card_my_lifts"
+    android:clickable="true"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+    <eu.h2020.sc.utils.MaterialRippleLayout
+        android:id="@+id/lift_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:mrl_rippleColor="@color/medium_grey"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_row_report_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/m_spacing">
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/text_view_report_category"
+                    style="@style/list_item_defined_bold_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/text_view_report_severity"
+                    style="@style/list_item_defined_bold_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/body_2"
+                    android:textStyle="bold" />
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/text_view_report_message"
+                    style="@style/list_item_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_view_report_category"
+                    android:layout_marginTop="@dimen/s_spacing"
+                    android:layout_toEndOf="@id/image_view_lift_status" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_below="@+id/relative_layout_row_report_body"
+                android:background="@color/light_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_row_report_body"
+                android:orientation="horizontal"
+                android:padding="@dimen/s_spacing">
+
+                <ImageView
+                    android:id="@+id/image_view_report_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/s_spacing"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_calendar_24dp"
+                    android:tint="@color/primary_text_color" />
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/text_view_report_date"
+                    style="@style/caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/s_spacing"
+                    android:layout_toEndOf="@id/image_view_report_date"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/primary_text_color" />
+
+                <ImageView
+                    android:id="@+id/image_view_report_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/s_spacing"
+                    android:layout_toStartOf="@+id/text_view_report_hour"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_clock_24dp"
+                    android:tint="@color/primary_text_color" />
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/text_view_report_hour"
+                    style="@style/caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/s_spacing"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/primary_text_color" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </eu.h2020.sc.utils.MaterialRippleLayout>
+</LinearLayout>

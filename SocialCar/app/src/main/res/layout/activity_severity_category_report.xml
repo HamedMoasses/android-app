@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color">
+
+    <eu.h2020.sc.utils.TextViewCustom
+        style="@style/lift_details_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/m_spacing"
+        android:gravity="center"
+        android:text="@string/send_report_title"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/m_spacing"
+        android:onClick="closeActivity"
+        android:src="@drawable/ic_close_white" />
+
+    <GridLayout
+        android:id="@+id/reportEventType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/xxh_spacing"
+        android:columnCount="3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_view_report_works"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:onClick="setReportCategory"
+            android:src="@mipmap/img_report_work" />
+
+        <ImageView
+            android:id="@+id/image_view_report_traffic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:onClick="setReportCategory"
+            android:src="@mipmap/img_report_traffic" />
+
+        <ImageView
+            android:id="@+id/image_view_report_accident"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:onClick="setReportCategory"
+            android:src="@mipmap/img_report_accident" />
+
+        <eu.h2020.sc.utils.TextViewCustom
+            style="@style/lift_details_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:gravity="center"
+            android:text="@string/report_category_works" />
+
+        <eu.h2020.sc.utils.TextViewCustom
+            style="@style/lift_details_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="1"
+            android:gravity="center"
+            android:text="@string/report_category_traffic" />
+
+        <eu.h2020.sc.utils.TextViewCustom
+            style="@style/lift_details_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="1"
+            android:gravity="center"
+            android:text="@string/report_category_accident" />
+
+
+    </GridLayout>
+
+    <View
+        android:id="@+id/reportEventDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/reportEventType"
+        android:layout_marginTop="@dimen/xh_spacing"
+        android:background="@color/primary_dark_color" />
+
+    <GridLayout
+        android:id="@+id/reportSeverity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reportEventDivider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/h_spacing"
+        android:columnCount="3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_view_report_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:alpha="0.4"
+            android:src="@mipmap/img_report_level_low" />
+
+        <ImageView
+            android:id="@+id/image_view_report_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:alpha="0.4"
+            android:src="@mipmap/img_report_level_medium" />
+
+        <ImageView
+            android:id="@+id/image_view_report_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:alpha="0.4"
+            android:src="@mipmap/img_report_level_high" />
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/text_view_report_low"
+            style="@style/lift_details_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:alpha="0.4"
+            android:gravity="center"
+            android:text="@string/report_severity_low" />
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/text_view_report_medium"
+            style="@style/lift_details_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="1"
+            android:alpha="0.4"
+            android:gravity="center"
+            android:text="@string/report_severity_medium" />
+
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/text_view_report_high"
+            style="@style/lift_details_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="1"
+            android:alpha="0.4"
+            android:gravity="center"
+            android:text="@string/report_severity_high" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button_report_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/xxh_spacing"
+        android:alpha="0.4"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/ic_play_arrow_24dp"
+        android:drawablePadding="@dimen/xs_spacing"
+        android:enabled="false"
+        android:onClick="next"
+        android:paddingEnd="@dimen/s_spacing"
+        android:paddingStart="@dimen/m_spacing"
+        android:text="@string/report_next_button"
+        android:textColor="@color/primary_color" />
+</RelativeLayout>

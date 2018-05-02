@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/s_height"
+    android:background="@color/fb_color"
+    android:orientation="horizontal">
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/stop_name"
+        style="@style/list_item_defined_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@mipmap/ic_point_stop"
+        android:drawablePadding="@dimen/xs_spacing"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/white" />
+</RelativeLayout>

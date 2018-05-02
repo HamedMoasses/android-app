@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/white"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="goToRideCreationMapActivity">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/img_mapped_trip" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/m_spacing">
+
+                        <ImageView
+                            android:id="@+id/imageView_mappedTrip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_mapped_trip" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/m_spacing"
+                            android:layout_toRightOf="@+id/imageView_mappedTrip"
+                            android:orientation="vertical">
+
+                            <eu.h2020.sc.utils.TextViewCustom
+                                style="@style/list_item_defined_bold_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mapped_trip"
+                                android:textColor="@color/white" />
+
+                            <eu.h2020.sc.utils.TextViewCustom
+                                style="@style/add_rating_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.76"
+                                android:maxWidth="216dp"
+                                android:text="@string/mapped_trip_description"
+                                android:textColor="@color/white_google" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </FrameLayout>
+
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/white"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="goToTripRecordingActivity">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/img_live_recorded_trip" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/m_spacing">
+
+                        <ImageView
+                            android:id="@+id/imageView_liveRecordedTrip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/linear_layout_live_recording_descr"
+                            android:src="@mipmap/ic_live_recorded_trip" />
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_live_recording_descr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/m_spacing"
+                            android:orientation="vertical">
+
+                            <eu.h2020.sc.utils.TextViewCustom
+                                style="@style/list_item_defined_bold_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/live_recorded_trip"
+                                android:textColor="@color/white" />
+
+                            <eu.h2020.sc.utils.TextViewCustom
+                                style="@style/add_rating_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.76"
+                                android:maxWidth="216dp"
+                                android:text="@string/live_recorded_trip_description"
+                                android:textColor="@color/white_google" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_centerInParent="true"
+                android:background="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_trip_type_selector" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

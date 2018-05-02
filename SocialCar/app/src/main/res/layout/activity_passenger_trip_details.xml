@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/main_toolbar"
+            layout="@layout/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/layout_trip_status_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_color"
+            android:orientation="horizontal"
+            android:padding="@dimen/m_spacing"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/layout_details_trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_color">
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/textView_total_time"
+                    style="@style/lift_details_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 min" />
+
+                <ImageView
+                    android:id="@+id/imageView_single_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s_spacing"
+                    android:layout_marginRight="@dimen/s_spacing"
+                    android:layout_marginTop="6dp"
+                    android:layout_toEndOf="@+id/textView_total_time"
+                    android:src="@drawable/ic_solutions_circle_divider_8dp"
+                    android:tint="@color/white" />
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/textView_total_price"
+                    style="@style/lift_details_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imageView_single_circle"
+                    android:text="€3.50" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_status_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_total_time"
+                    android:orientation="horizontal">
+
+                    <eu.h2020.sc.utils.TextViewCustom
+                        style="@style/lift_details_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/status"
+                        android:textAllCaps="true" />
+
+                    <eu.h2020.sc.utils.TextViewCustom
+                        android:id="@+id/textView_status"
+                        style="@style/lift_details_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="@dimen/xs_spacing"
+                        android:text="Active"
+                        android:textAllCaps="true" />
+
+                    <FrameLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="@dimen/s_spacing">
+
+                        <ImageView
+                            android:id="@+id/statusGif"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/gif_small_pulsing_bg"
+                            android:tint="@color/accent_color"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/image_view_shape"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="2.5dp"
+                            android:src="@drawable/shape_pending_gif_mask"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/textView_user_request_status"
+                    style="@style/caption"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear_layout_status_container"
+                    android:text="Annachiara accepted your lift request"
+                    android:textColor="#e8c5c5" />
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_cancel_lift"
+                style="@style/lift_details_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/layout_details_trip"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/m_spacing"
+                android:layout_toEndOf="@+id/layout_details_trip"
+                android:background="@drawable/btn_rounded_corners_white_bg"
+                android:onClick="cancelRequest"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:text="@string/cancel_request"
+                android:textAllCaps="true"
+                android:textColor="@color/primary_color"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/complete_trip_status_header_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_color"
+            android:gravity="center"
+            android:padding="@dimen/m_spacing"
+            android:visibility="gone">
+
+            <eu.h2020.sc.utils.TextViewCustom
+                android:id="@+id/status_trip_complete_text"
+                style="@style/lift_details_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/completed_trip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/xs_spacing"
+                android:textAllCaps="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/s_spacing"
+                android:layout_below="@+id/status_trip_complete_text">
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/total_time_complete_text"
+                    style="@style/lift_details_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 min" />
+
+                <ImageView
+                    android:id="@+id/single_circle_complete_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s_spacing"
+                    android:layout_marginRight="@dimen/s_spacing"
+                    android:layout_marginTop="6dp"
+                    android:layout_toEndOf="@+id/total_time_complete_text"
+                    android:src="@drawable/ic_solutions_circle_divider_8dp"
+                    android:tint="@color/white" />
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/total_price_complete_price"
+                    style="@style/lift_details_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/single_circle_complete_image"
+                    android:text="€3.50" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/activity_passenger_trip_details_box_add_preview_rating_layout"
+            layout="@layout/layout_template_box_add_rating"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_passenger_lift_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/activity_passenger_trip_details_add_rating_layout"
+        layout="@layout/add_rating_layout"
+        android:visibility="gone" />
+</FrameLayout>

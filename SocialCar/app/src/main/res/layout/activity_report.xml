@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="7dp">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/light_grey"
+        tools:context="eu.h2020.sc.ui.reports.ReportsActivity">
+
+        <include
+            android:id="@+id/main_toolbar"
+            layout="@layout/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_reports"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main_toolbar"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/activity_reports_error_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/activity_reports_button_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_reports_error_message"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/m_spacing"
+            android:background="@drawable/btn_rounded_corners_white_bg"
+            android:onClick="buttonRetry"
+            android:text="@string/retry"
+            android:textColor="@color/primary_text_color"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewDrawer"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/white"
+        android:scrollbars="vertical" />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_acceptance_lift">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lift_details_frame_layout_avatar"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/s_spacing">
+
+        <ImageView
+            android:id="@+id/lift_details_image_view_status_gif"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/gif_large_pulsing_bg"
+            android:tint="@color/accent_color" />
+
+        <ImageView
+            android:id="@+id/lift_details_image_view_shape"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="2.5dp"
+            android:src="@drawable/shape_large_pending_gif_mask" />
+
+        <ImageView
+            android:id="@+id/lift_details_image_view_avatar"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/user_notification_default" />
+    </FrameLayout>
+
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/lift_details_text_view_user_name"
+        style="@style/list_item_defined_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lift_details_frame_layout_avatar"
+        android:layout_centerHorizontal="true"
+        android:text="Janny Jackson"
+        android:textColor="@color/white" />
+
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/lift_details_text_view_user_rating"
+        style="@style/list_item_defined_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lift_details_text_view_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/xs_spacing"
+        android:drawableLeft="@drawable/ic_star_13dp"
+        android:textColor="#e8c5c5"
+        android:textSize="14sp" />
+
+
+</merge>

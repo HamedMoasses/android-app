@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/s_spacing"
+    android:layout_marginRight="@dimen/s_spacing"
+    android:elevation="2dp"
+    android:background="@drawable/card_my_lifts"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <eu.h2020.sc.utils.MaterialRippleLayout
+        android:id="@+id/lift_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:mrl_rippleColor="@color/medium_grey"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_row_lift_status_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_row_lift_status_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/m_spacing">
+
+                <ImageView
+                    android:id="@+id/image_view_lift_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_lift_status" />
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/text_view_lift_status"
+                    style="@style/list_item_defined_bold_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/image_view_lift_status"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Pending Trip" />
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/text_view_lift_date"
+                    style="@style/list_item_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/image_view_lift_status"
+                    android:layout_below="@id/text_view_lift_status"
+                    android:text="on 29/09/2017 at 12:35 PM" />
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/text_view_lift_departure_arrival"
+                    style="@style/list_item_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_view_lift_date"
+                    android:layout_toEndOf="@id/image_view_lift_status"
+                    android:text="Via umberto tupini , 80-88, Roma - Via Tiburtina , 123, Roma" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_below="@+id/relative_layout_row_lift_status_body"
+                android:background="@color/light_grey" />
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_row_lift_status_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_row_lift_status_body"
+                android:orientation="horizontal"
+                android:padding="@dimen/m_spacing">
+
+
+                <ImageView
+                    android:id="@+id/image_view_lift_notification_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/m_spacing"
+                    android:src="@drawable/ic_rating_add_24dp" />
+
+
+                <eu.h2020.sc.utils.TextViewCustom
+                    android:id="@+id/text_view_lift_status_msg"
+                    style="@style/list_item_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/image_view_lift_notification_status"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/trip_status_msg" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </eu.h2020.sc.utils.MaterialRippleLayout>
+
+</LinearLayout>

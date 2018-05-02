@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginRight="@dimen/xh_spacing"
+    android:background="@drawable/sender_chat_bubble"
+    android:gravity="left"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_view_receiver_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem up sis at vero eros et "
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/text_view_receiver_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/s_spacing"
+        android:layout_marginTop="@dimen/s_spacing"
+        android:text="22:00 AM"
+        android:textColor="@color/medium_grey" />
+
+</LinearLayout>

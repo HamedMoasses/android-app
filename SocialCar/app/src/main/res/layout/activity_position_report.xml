@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    android:orientation="vertical"
+    tools:context="eu.h2020.sc.ui.reports.creation.PositionReportActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/m_spacing"
+        android:onClick="goBack"
+        android:src="@drawable/ic_arrow_back_24dp" />
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/text_view_send_report_title"
+        style="@style/lift_details_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/m_spacing"
+        android:gravity="center"
+        android:text="@string/send_report_title"
+        android:textSize="20sp" />
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/label_from"
+        style="@style/rating_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_send_report_title"
+        android:layout_marginStart="@dimen/h_spacing"
+        android:text="@string/send_report_position_from"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_start_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_from"
+        android:layout_marginEnd="@dimen/h_spacing"
+        android:layout_marginStart="@dimen/h_spacing">
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/activity_position_report_tv_from"
+            style="@style/list_item_defined_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/insert_address"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/activity_position_report_btn_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_my_location_24dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/md_divider_height"
+            android:layout_below="@+id/activity_position_report_tv_from"
+            android:layout_marginTop="@dimen/m_spacing"
+            android:background="@color/white" />
+    </RelativeLayout>
+
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/label_to"
+        style="@style/rating_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_layout_start_address"
+        android:layout_marginStart="@dimen/h_spacing"
+        android:layout_marginTop="@dimen/h_spacing"
+        android:text="@string/send_report_position_to"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_destination_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_to"
+        android:layout_marginEnd="@dimen/h_spacing"
+        android:layout_marginStart="@dimen/h_spacing">
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/activity_position_report_tv_to"
+            style="@style/list_item_defined_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/insert_address"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/activity_position_report_btn_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_my_location_24dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/md_divider_height"
+            android:layout_below="@+id/activity_position_report_tv_to"
+            android:layout_marginTop="@dimen/m_spacing"
+            android:background="@color/white" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_report_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/xxh_spacing"
+        android:alpha="0.4"
+        android:background="@color/white"
+        android:enabled="false"
+        android:onClick="sendReport"
+        android:text="@string/send_report_button"
+        android:textColor="@color/primary_color" />
+
+</RelativeLayout>

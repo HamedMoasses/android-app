@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/main_toolbar"
+            layout="@layout/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/frame_layout_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_toolbar">
+
+            <ImageView
+                android:id="@+id/imageView_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg_city" />
+
+            <ImageView
+                android:id="@+id/imageView_city_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg_city" />
+
+            <ImageView
+                android:id="@+id/imageView_clouds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/s_spacing"
+                android:src="@mipmap/img_clouds" />
+
+            <ImageView
+                android:id="@+id/imageView_clouds_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/m_spacing"
+                android:src="@mipmap/img_clouds" />
+
+            <ImageView
+                android:id="@+id/imageView_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/s_spacing"
+                android:src="@mipmap/img_car" />
+        </FrameLayout>
+
+        <!--ImageView
+            android:id="@+id/frame_layout_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_toolbar"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/bg_live_recording_trip" /-->
+
+        <ImageButton
+            android:id="@+id/imageButton_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3"
+            android:background="@color/transparent"
+            android:onClick="actionPlayRecording"
+            android:src="@drawable/ic_btn_play" />
+
+        <FrameLayout
+            android:id="@+id/act_trip_rec_frame_layout_pause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/pauseGif"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:alpha="0.2"
+                android:onClick="actionPauseRecording"
+                android:scaleType="fitXY"
+                android:src="@drawable/gif_small_pulsing_bg"
+                android:tint="@color/car_color_red" />
+
+            <ImageButton
+                android:id="@+id/imageButton_pause"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:onClick="actionPauseRecording"
+                android:src="@drawable/ic_btn_pause" />
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frame_layout_banner">
+
+            <TextView
+                android:id="@+id/testo_prova"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <eu.h2020.sc.utils.TextViewCustom
+                android:id="@+id/textView_messages_recording"
+                style="@style/list_item_defined_bold_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.5"
+                android:gravity="top|center_horizontal"
+                android:paddingTop="120dp"
+                android:text="@string/start_recording_label"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+
+            <ImageButton
+                android:id="@+id/btn_stop_recording"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/xh_spacing"
+                android:layout_weight="0.5"
+                android:background="@color/transparent"
+                android:onClick="actionStopRecording"
+                android:src="@drawable/ic_btn_stop"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/s_spacing"
+            android:gravity="center_horizontal"
+            android:text="@string/live_recorded_hint" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

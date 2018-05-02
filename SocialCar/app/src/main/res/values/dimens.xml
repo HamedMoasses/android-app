@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="divider_height">1dp</dimen>
+
+    <!-- Default height for elements. -->
+    <dimen name="s_height">48dp</dimen>
+    <dimen name="m_height">56dp</dimen>
+    <dimen name="h_height">72dp</dimen>
+
+    <!--Default spacing values. -->
+    <dimen name="xs_spacing">4dp</dimen>
+    <dimen name="s_spacing">8dp</dimen>
+    <dimen name="m_spacing">16dp</dimen>
+    <dimen name="h_spacing">32dp</dimen>
+    <dimen name="xh_spacing">48dp</dimen>
+    <dimen name="xxh_spacing">56dp</dimen>
+
+    <!-- Drawable padding values. -->
+
+    <!--Text size values. -->
+    <dimen name="caption">12sp</dimen>
+    <dimen name="body_2">14sp</dimen>
+    <dimen name="body_1">16sp</dimen>
+    <dimen name="toolbar_title">20sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+</resources>

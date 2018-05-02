@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/m_height"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/main_toolbar"
+                layout="@layout/main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/ridecreation_edittext_trip"
+                style="@style/list_item_undefined_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m_height"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_trip_name"
+                android:inputType="textCapWords"
+                android:paddingLeft="@dimen/m_spacing"
+                android:paddingRight="@dimen/m_spacing"
+                android:singleLine="true"
+                android:textColor="@color/primary_text_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/m_spacing"
+                android:layout_marginRight="@dimen/m_spacing"
+
+                >
+
+                <TextView
+                    android:id="@+id/ridecreation_text_tripdate"
+                    style="@style/list_item_defined_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/s_height"
+                    android:gravity="center_vertical"
+                    android:onClick="showDatePickerDialog"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/ridecreation_text_triptime"
+                    style="@style/list_item_defined_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/s_height"
+                    android:layout_alignParentEnd="true"
+                    android:drawablePadding="@dimen/s_spacing"
+                    android:gravity="center_vertical"
+                    android:onClick="showTimePickerDialog" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/m_spacing"
+                    android:paddingTop="@dimen/m_spacing">
+
+                    <ImageView
+                        android:id="@+id/car"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/m_spacing"
+                        android:layout_marginRight="@dimen/m_spacing"
+                        android:contentDescription="car_image"
+                        android:src="@drawable/ic_car_24dp"
+                        android:tint="@color/secondary_text_color" />
+
+
+                    <TextView
+                        android:id="@+id/ridecreation_text_carmodel"
+                        style="@style/list_item_defined_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/car" />
+
+
+                    <TextView
+                        android:id="@+id/ridecreation_text_carplate"
+                        style="@style/list_item_undefined_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/car"
+                        android:layout_toEndOf="@id/car" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_marginBottom="@dimen/xs_spacing"
+                    android:layout_marginTop="@dimen/xs_spacing"
+                    android:background="@color/medium_grey" />
+
+
+                <TextView
+                    android:id="@+id/ridecreation_text_departureaddress"
+                    style="@style/list_item_defined_title"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="@dimen/s_height"
+                    android:layout_marginLeft="@dimen/m_spacing"
+                    android:layout_marginRight="@dimen/m_spacing"
+                    android:drawablePadding="@dimen/m_spacing"
+                    android:drawableStart="@mipmap/ic_point_a"
+                    android:gravity="center_vertical"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/ridecreation_text_arrivingaddress"
+                    style="@style/list_item_defined_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/s_height"
+                    android:layout_marginLeft="@dimen/m_spacing"
+                    android:layout_marginRight="@dimen/m_spacing"
+                    android:drawablePadding="@dimen/m_spacing"
+                    android:drawableStart="@mipmap/ic_point_b"
+                    android:gravity="center_vertical" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            style="@style/btn_primary_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/m_spacing"
+            android:layout_marginLeft="@dimen/m_spacing"
+            android:layout_marginRight="@dimen/m_spacing"
+            android:clickable="true"
+            android:onClick="makeRideCreationRequest"
+            android:text="@string/create_ride" />
+
+
+    </RelativeLayout>
+</ScrollView>
+

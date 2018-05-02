@@ -1,0 +1,427 @@
+<resources>
+    <string name="app_name">RideMyRoute</string>
+
+    <string name="url_faq">http://socialcar-project.eu/faq-en</string>
+    <string name="url_contact_us">http://socialcar-project.eu/contact-en</string>
+    <string name="url_terms">http://socialcar-project.eu/terms-en</string>
+
+    <string name="trip_solution_current_trips">Current found trips</string>
+    <string name="trip_solution_current_tripRequest">Current TripRequest</string>
+
+    <!-- Sign UP ACTIVITY -->
+    <string name="password">Password</string>
+    <string name="add_image">ADD IMAGE</string>
+    <string name="your_personal_info">Other info</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="dob">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="register">Register</string>
+
+    <string name="error_filled_field">Fill all mandatory fields correctly</string>
+    <string name="choose">Select</string>>
+    <string name="step">Step</string>
+    <string name="of">of</string>
+    <string name="complete_signup">Complete Registration</string>
+    <string name="min6">Min 6 chars</string>
+
+    <string name="social">Social</string>
+    <string name="social_description">Unlock more features\nconnecting your facebook or google account!\</string>
+
+    <string name="new_driver_message">It looks like you\'re not\nregistered as a driver.</string>
+    <string name="add_car">Add a car</string>
+    <string name="become_a_driver">Become a driver</string>
+
+
+    <string name="error_enable_permission_app">Enable all permission for this app</string>
+
+
+    <!-- Trip search -->
+    <string name="path">Path</string>
+    <string name="set_starting_point">Set starting point</string>
+    <string name="starting_point">Starting point</string>
+    <string name="set_destination_point">Set destination point</string>
+    <string name="destination_point">Destination point</string>
+    <string name="search_solutions">Search solutions</string>
+    <string name="label_continue">Continue</string>
+    <string name="hint_insert_starting">Insert starting address</string>
+    <string name="hint_insert_destination">Insert destination address</string>
+    <string name="start_point_not_setted">Set the start point</string>
+
+    <string name="note">Note</string>
+
+
+    <string name="tab_title_passenger">PASSENGER</string>
+    <string name="tab_title_driver">DRIVER</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="user_already_created">User already exists! Please try another one.</string>
+    <string name="no_solutions_found">No solutions found.\nPlease try again.</string>
+
+    <string name="driver">Driver</string>
+    <string name="solutions_toolbar_label">Solutions</string>
+    <string name="waiting_time_toolbar_label">Waiting time</string>
+    <string name="solutions_details_toolbar_label">Details</string>
+    <string name="accept_lift_toolbar_label">Lift Request</string>
+    <string name="solutions_filters_label">Filters</string>
+    <string name="solutions_departure_time_label">Departure: NOW</string>
+
+    <string name="ok">OK</string>
+    <string name="retry">Retry</string>
+    <string name="feedback_not_complete_error">Please answer all questions in this survey.</string>
+    <string name="generic_error">Something went wrong.\nPlease try again.</string>
+    <string name="no_connection_error">Check your internet connection\nand try again.</string>
+    <string name="unauthorized_error">An error occurred!</string>
+    <string name="forgot_password">Forgot your password ?</string>
+    <string name="forgot_password_msg">Please send us an email to &lt;a href="http://socialcar-project.eu/contact-en">Contact Us&lt;/a></string>
+    <string name="signup">Sign up</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="signin">Sign in</string>
+    <string name="no_rout_found">No route found</string>
+
+    <string name="signin_facebook">Sign in with Facebook</string>
+    <string name="signin_google">Sign in with Google</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="signin_by_email">Sign in by email</string>
+
+    <string name="insert_email">Insert email</string>
+    <string name="insert_password">Insert password</string>
+    <string name="invalid_email_password">Invalid email or password</string>
+    <string name="social_sign_in_or">OR</string>
+    <string name="or">OR</string>
+    <string name="car_info">Car Info</string>
+    <string name="additional_info">Additional Info</string>
+    <string name="model">Model</string>
+    <string name="car_plate">Car Plate</string>
+    <string name="plate">Plate</string>
+
+    <string name="food_allowed">Food allowed</string>
+    <string name="smoking_allowed">Smoking allowed</string>
+    <string name="car_photos">Car photo</string>
+    <string name="air_conditioning">Air Conditioning</string>
+    <string name="pets_allowed">Pets allowed</string>
+    <string name="luggage_allowed">Luggage allowed</string>
+    <string name="child_seat">Child seat</string>
+    <string name="colour">Color</string>
+    <string name="select_colour">Select color</string>
+    <string name="seat">Seats</string>
+    <string name="message_progress_dialog">Loading&#8230;</string>
+    <string name="send_request">Send request</string>
+    <string name="book_now">Book now</string>
+
+    <string name="lift_request">Lift Request</string>
+    <string name="trip_accepted">Trip accepted</string>
+    <string name="trip_declined">Trip declined</string>
+    <string name="trip_cancelled">Trip cancelled</string>
+
+
+    <string name="accept_lift">Accept</string>
+    <string name="decline_lift">Decline</string>
+    <string name="declined">Declined</string>
+
+    <string name="from">from</string>
+    <string name="to">to</string>
+    <string name="at_what_hour">\@</string>
+
+    <string name="open_navigation_drawer">Open navigation drawer</string>
+    <string name="close_navigation_drawer">Close navigation drawer</string>
+
+
+    <!-- Drawer Titles -->
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="myLifts">My Trips</string>
+    <string name="settings">Settings</string>
+    <string name="faq">FAQ</string>
+    <string name="terms">Terms &amp; Conditions</string>
+    <string name="privacy">Privacy policy</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="logout">Logout</string>
+    <string name="logout_dialog_text">Do you want to logout?</string>
+
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="large">Large</string>
+    <string name="medium">Medium</string>
+    <string name="small">Small</string>
+
+    <string name="trip_status_msg">Please leave a feedback</string>
+    <string name="tab_title_lift_requested">REQUESTED</string>
+    <string name="tab_title_lift_offered">OFFERED</string>
+    <string name="active_trip">Active Trip</string>
+    <string name="cancelled_trip">Cancelled Trip</string>
+    <string name="completed_trip">The trip is completed</string>
+    <string name="pending_trip">Pending Trip</string>
+    <string name="declined_trip">Declined Trip</string>
+    <string name="message_cancelled_trip">The trip was cancelled.</string>
+
+    <string name="text_no_trips_found">No trips were found.\n</string>
+    <string name="text_became_new_driver">It looks like you are not\nregistered as a driver.</string>
+    <string name="search_for_trips">Search for trips</string>
+    <string name="btn_become_driver">Become a driver</string>
+    <string name="offer_trip">Offer a trip</string>
+
+
+    <string name="google_play_service_error">Google Play Service Error. Try again.</string>
+    <string name="google_play_service_not_available">Google Play Services not available.</string>
+    <string name="status">Status:</string>
+
+    <string name="lift_status_pending_message">didn\'t answer yet</string>
+    <string name="lift_status_accepted_message">accepted your lift request</string>
+    <string name="lift_status_decline_message">declined your lift request</string>
+    <string name="cancel_request">Cancel Request</string>
+    <string name="cancel_request_confirmation_text">Do you want to cancel the lift?</string>
+    <string name="sms">SMS</string>
+    <string name="call">Call</string>
+    <string name="pending_lift_title">Pending trip</string>
+    <string name="active_lift_title">Active trip</string>
+    <string name="completed_lift_title">Completed trip</string>
+    <string name="cancelled_lift_title">Cancelled trip</string>
+    <string name="declined_lift_title">Declined trip</string>
+
+    <string name="invalid_search_ride_input">Invalid starting or destination point</string>
+    <string name="enter_trip_name">Enter trip name</string>
+    <string name="create_ride">Create</string>
+    <string name="toolbar_label_new_trip">New Trip</string>
+    <string name="pick_image_intent_text">Profile photo</string>
+    <string name="login_info">Login info</string>
+    <string name="error_upload_picture">An error occurred while uploading the picture</string>
+
+    <string name="delete_ride_dialog_title">Delete trip?</string>
+    <string name="update_ride_dialog_title">Disable trip?</string>
+
+    <string name="ride_dialog_body_message">If you have any passengers associated with this active trip, they will be notified.</string>
+
+
+    <string name="trip_deleted">Trip deleted</string>
+    <string name="undo_snackbar">UNDO</string>
+
+    <string name="delete_trip">DELETE TRIP</string>
+    <string name="ride_message">When you\'ll accept a lift request for this trip, the passenger avatar will be displayed in this area.</string>
+    <string name="click_to_add_ride">To create a new trip, tap on the \"+\" button</string>
+
+    <string name="at_date">at</string>
+    <string name="on_date">of</string>
+
+    <string name="ride_activated">Trip activated</string>
+    <string name="ride_disabled">Trip disabled</string>
+    <string name="rating">Rating</string>
+    <string name="wheelchair">Wheelchair, Blind</string>
+    <string name="public_feedback">In order to help the other users, your feedback will be public.</string>
+    <string name="ask_survey_text">Help the other users. Tell us more about %1$s\'s driving ability by taking this quick survey.</string>
+
+    <string name="not_now">NOT NOW</string>
+
+    <string name="question_rating_title">How was your experience with %1$s?</string>
+
+    <!--Survey-->
+    <string name="survey_title">Survey</string>
+    <string name="thanks_survey">Thanks for your feedback</string>
+    <string name="question_survey_punctuation">Was %1$s on time?</string>
+    <string name="question_survey_satisfaction">Did you enjoyed travelling with %1$s?</string>
+    <string name="question_survey_comfort">Was the car comfortable?</string>
+    <string name="question_survey_duration">Was the arriving time respected?</string>
+    <string name="question_survey_route">Did %1$s completed the declared route?</string>
+    <string name="question_survey_driver_behaviour">How was %1$s\'s driving behaviour?</string>
+    <string name="question_survey_carpooler_behaviour">How was %1$s\'s behaviour?</string>
+
+    <string name="min">min</string>
+    <string name="stops">stops</string>
+    <string name="arriving">Arriving</string>
+
+    <string name="edit_profile_toolbar_label">Edit profile</string>
+    <string name="special_needs_as_a_passenger">Special needs as a passenger</string>
+
+    <string name="already_rated">You have already rated this user</string>
+    <string name="music_allowed">Music allowed</string>
+    <string name="travel_modes">Travel Modes</string>
+    <string name="optimize_travel_solutions_by">Optimize Travel Solutions by</string>
+    <string name="fastest">By fastest</string>
+    <string name="travel_preferences_optional">Travel preferences (optional)</string>
+    <string name="carpooler_gender">Carpooler Gender</string>
+    <string name="no_preference">No preference</string>
+    <string name="carpooler_age_range">Carpooler Age Range</string>
+    <string name="carpooler_age_range_value">30 to 40</string>
+    <string name="special_needs">Special needs</string>
+    <string name="preferred_travel_mode_value">Bus</string>
+    <string name="max_nr_of_transfers">Maximum number of transfers</string>
+    <string name="max_cost">Maximum cost</string>
+    <string name="max_walk_distance">Maximum walk distance (meters)</string>
+    <string name="max_nr_of_transfers_value">3</string>
+    <string name="max_cost_value">6</string>
+
+    <string name="max_walk_distance_value">200m</string>
+
+    <string name="none">None</string>
+    <string name="gps_tracking">GPS Tracking</string>
+    <string name="smoking">Smoking</string>
+    <string name="food">Food</string>
+    <string name="music">Music</string>
+    <string name="pets">Pets</string>
+    <string name="luggage">Luggage</string>
+    <string name="carpooling">Carpooling</string>
+    <string name="subway">Subway</string>
+    <string name="bus">Bus</string>
+    <string name="train">Train</string>
+    <string name="tram">Tram</string>
+    <string name="walk">Walk</string>
+    <string name="preferred_traveling_mode">Preferred mode</string>
+    <string name="sort_solutions_by">Sort solutions by</string>
+    <string name="departure_label">Depart at</string>
+    <string name="arrival_label">Arrive by</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="depart_at">Departure at</string>
+    <string name="arrive_by">Arrive by</string>
+    <string name="signup_by_email">Signup by Email</string>
+    <string name="continue_by_email">Continue by Email</string>
+    <string name="message_lift_updated_as_active">The lift has been accepted and will be notified the passenger.</string>
+    <string name="message_lift_updated_as_cancelled">The lift has been cancelled and will be notified the passenger.</string>
+    <string name="message_lift_updated_as_refused">The lift has been refused and will be notified the passenger.</string>
+    <string name="message_lift_updated">The lift has been updated successfully.</string>
+
+    <string name="address_not_found">No match found for the address!</string>
+    <string name="error_during_get_address">Error during retrieve address! Please, retry</string>
+    <string name="turn_on_gps_message">In order to view the reports, you must enable the GPS.</string>
+
+
+    <!-- Report -->
+    <string name="reports">Traffic conditions</string>
+
+    <string name="report_category_traffic">Traffic</string>
+    <string name="report_category_works">Works</string>
+    <string name="report_category_accident">Accident</string>
+
+    <string name="report_severity_low">Low</string>
+    <string name="report_severity_medium">Medium</string>
+    <string name="report_severity_high">High</string>
+
+    <string name="report_next_button">Next</string>
+    <string name="send_report_title">Send Report</string>
+
+    <string name="send_report_position_from">From</string>
+    <string name="send_report_position_to">To (Optional)</string>
+    <string name="send_report_button">Send</string>
+
+    <string name="no_reports_found">No reports available please try again later.</string>
+
+    <string name="insert_address">Insert address</string>
+    <string name="thanks_report">Thanks for your time!</string>
+    <string name="share_facebook">Share on Facebook</string>
+
+    <string name="report_created_successfully_message"> Report Successfully registered.\nLet others know about your report.</string>
+
+    <string name="report_message">On %1$s</string>
+
+    <string name="share_on_facebook_success_message">Thanks for the post!</string>
+    <string name="share_on_facebook_error_message">Error during post on Facebook. Try again later.</string>
+
+    <string name="cheapest_route">Cheapest</string>
+    <string name="fastest_route">Fastest</string>
+
+    <string name="empty_filtered_list">No results found</string>
+
+    <string name="distance_meters">meters</string>
+
+    <string name="by_registering_you_agree_with_our">By registering you agree with our</string>
+    <string name="sign_up_accept_terms_conditions_error">You must agree with our terms &amp; conditions</string>
+
+    <string name="walk_towards">Walk towards %1$s</string>
+    <string name="walk_towards_0_min">0 min</string>
+    <string name="departs_at">Departs at %1$s</string>
+
+    <string name="invalid_date_time">Please insert a valid date and time</string>
+
+    <string-array name="drawer_items_titles">
+        <item>@string/home</item>
+        <item>@string/profile</item>
+        <item>@string/myLifts</item>
+        <item>@string/reports</item>
+        <item>@string/messages</item>
+        <item>@string/terms</item>
+        <item>@string/privacy</item>
+        <item>@string/contact_us</item>
+        <item>@string/logout</item>
+    </string-array>
+
+    <string-array name="array_gender">
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+
+    <string-array name="array_carpooler_age_range">
+        <item>18&#8211;30</item>
+        <item>30&#8211;40</item>
+        <item>40&#8211;50</item>
+        <item>50&#8211;60</item>
+    </string-array>
+
+    <string-array name="array_am_pm">
+        <item>am</item>
+        <item>pm</item>
+    </string-array>
+
+    <string-array name="array_yes_no">
+        <item>@string/yes</item>
+        <item>@string/no</item>
+    </string-array>
+
+    <string-array name="array_dialog_luggage_size">
+        <item>@string/small</item>
+        <item>@string/medium</item>
+        <item>@string/large</item>
+        <item>@string/no</item>
+    </string-array>
+
+    <string name="Large">Large</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="pending">Pending</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="active">Active</string>
+    <string name="terms_conditions">terms &amp; conditions</string>
+    <string name="departure">Departure</string>
+
+
+    <string name="waypoints_label">waypoints</string>
+    <string name="add_waypoints">Add waypoints</string>
+    <string name="hint_insert_waypoint">Add a new waypoint…</string>
+
+    <plurals name="waypoints_quantity">
+        <item quantity="one">%d waypoint</item>
+        <item quantity="other">%d waypoints</item>
+    </plurals>
+
+    <string name="no_routes_found_error">No routes were found. Please try again.</string>
+
+    <string name="choose_trip_type">Choose trip type</string>
+    <string name="currently_recording">Currently recording&#8230;</string>
+
+    <string name="save_trip">Save</string>
+    <string name="dialog_save_trip">Save recorded trip?</string>
+
+    <string name="mapped_trip">Mapped trip</string>
+    <string name="mapped_trip_description">During the trip creation, you may add one or more waypoints.</string>
+    <string name="live_recorded_trip">Live recorded trip</string>
+    <string name="live_recorded_trip_description">Choose this method to create a trip based on the path that you are driving on.</string>
+    <string name="start_recording_label">Press the play button\nto start recording</string>
+    <string name="resume_recording_label">Press the play button\nto resume recording</string>
+    <string name="resume_recording_trip">Resume</string>
+    <string name="delete_recorded_trip">Delete</string>
+    <string name="delete_recorded_trip_message">The recorded trip has been deleted</string>
+
+    <string name="trip_preview">Trip preview</string>
+    <string name="turn_on_gps_message_trip_recording">In order to record the trip, you must enable the GPS.</string>
+    <string name="enable">Enable</string>
+
+    <string name="title_dialog_back_trip_recording">Exit live recording mode</string>
+    <string name="message_dialog_back_trip_recording">By exiting this mode, the current registered trip will be canceled.</string>
+
+    <string name="live_recorded_hint"><b>NOTE:</b> To successfully record your trip, make sure that the application is always in foreground.</string>
+
+    <string name="yesterday">Yesterday</string>
+</resources>

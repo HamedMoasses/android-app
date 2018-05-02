@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eu.h2020.sc">
+
+    <!-- phone -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- External storage for caching. -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".SocialCarApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.SocialCar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1942140106005270"
+            android:exported="true" />
+
+        <activity android:name=".GeneralActivity" />
+        <activity
+            android:name=".ui.signin.SocialSigninActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SocialCar.Status.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.h2020.sc.ui.signin.SignInActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.signin.SignInActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SocialCar.Status.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.signup.SignUpConnectSocialActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.signup.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.h2020.sc.ui.signup.SignUpConnectSocialActivity" />
+        </activity>
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.driver.becomedriver.BecomeDriverActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.trip.solution.TripSolutionsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.h2020.sc.ui.home.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.trip.solution.details.TripSolutionDetailsActivity"
+            android:label="@string/solutions_details_toolbar_label"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.h2020.sc.ui.trip.solution.TripSolutionsActivity" />
+        </activity>
+        <activity
+            android:name=".ui.lift.AcceptanceLiftActivity"
+            android:label="@string/accept_lift_toolbar_label"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.lift.LiftActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".fcm.SocialCarMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.SocialCarInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.lift.passenger.trip.PassengerTripDetailsActivity"
+            android:label="@string/solutions_details_toolbar_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.driver.DriverDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.lift.passenger.lift.PassengerLiftDetailsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.h2020.sc.ui.lift.LiftActivity" />
+        </activity>
+        <activity
+            android:name=".ui.ride.creation.activity.RideCreationMapActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.h2020.sc.ui.home.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.ride.creation.activity.RideCreationFormActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.waitingtime.WaitingTimeActivity"
+            android:label="@string/waiting_time_toolbar_label"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.h2020.sc.ui.home.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.feedback.RatingSurveyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reports.ReportsActivity"
+            android:label="@string/reports"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.messages.MessagesActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.h2020.sc.ui.messages.ChatActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.messages.ChatActivity"
+            android:label="@string/messages"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.reports.creation.PostReportFacebookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reports.creation.SeverityAndCategoryReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reports.creation.PositionReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.privacypolicy.PrivacyPolicyActivity"
+            android:label="@string/privacy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FaqActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.ContactUsActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.TermsConditionsActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.trip.ChooseTripTypeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.h2020.sc.ui.home.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.trip.recording.TripRecordingActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.h2020.sc.ui.trip.ChooseTripTypeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.trip.recording.TripRecordedMapActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.h2020.sc.ui.trip.recording.TripRecordedMapActivity" />
+        </activity>
+    </application>
+
+</manifest>

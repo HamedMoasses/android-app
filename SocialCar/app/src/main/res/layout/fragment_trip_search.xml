@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_shadow_line"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="-8dp">
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/image_view_my_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_trip_search"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/m_spacing"
+        android:layout_marginRight="@dimen/s_spacing"
+        android:background="@drawable/btn_my_location_selector"
+        android:clickable="true" />
+
+
+    <View
+        android:id="@+id/view_shadow_line"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_above="@+id/layout_trip_search"
+        android:background="@drawable/search_box_top_shadow" />
+
+    <LinearLayout
+        android:id="@+id/layout_trip_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/hp_search_box"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/layout_start_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height"
+            android:layout_marginBottom="@dimen/s_spacing"
+            android:layout_marginTop="@dimen/s_spacing"
+            android:paddingLeft="@dimen/m_spacing"
+            android:paddingRight="@dimen/m_spacing">
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:id="@+id/ripple_layout_text_start"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_height"
+                app:mrl_rippleAlpha="0.3"
+                app:mrl_rippleColor="@color/light_grey"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_start_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s_height"
+                    android:layout_marginRight="42dp"
+                    android:background="@drawable/search_field_dark_bg"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/image_view_search_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:tint="@color/secondary_text_color" />
+
+                    <View
+                        android:id="@+id/view_search_divider_start"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/image_view_search_start"
+                        android:background="@color/stroke_defined_search_field" />
+
+                    <eu.h2020.sc.utils.TextViewCustom
+                        android:id="@+id/text_view_start_point"
+                        style="@style/list_item_defined_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/s_spacing"
+                        android:layout_toRightOf="@+id/view_search_divider_start"
+                        android:ellipsize="end"
+                        android:hint="@string/hint_insert_starting"
+                        android:maxLines="1" />
+
+
+                </RelativeLayout>
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:id="@+id/ripple_layout_cancel_start"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:background="@drawable/cancel_search_field_bg"
+                android:clickable="true"
+                android:padding="11dp"
+                app:mrl_rippleAlpha="0.3"
+                app:mrl_rippleColor="@color/light_grey"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:id="@+id/image_view_cancel_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_close_white"
+                    android:tint="#6d6d6d" />
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_destination_point_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height"
+            android:layout_marginBottom="@dimen/s_spacing"
+            android:paddingLeft="@dimen/m_spacing"
+            android:paddingRight="@dimen/m_spacing">
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:id="@+id/ripple_layout_text_destination"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_height"
+                app:mrl_rippleAlpha="0.3"
+                app:mrl_rippleColor="@color/light_grey"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_destination_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s_height"
+                    android:layout_marginRight="42dp"
+                    android:background="@drawable/search_field_dark_bg"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/image_view_search_destination"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:tint="@color/secondary_text_color" />
+
+                    <View
+                        android:id="@+id/view_search_divider_destination"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/image_view_search_destination"
+                        android:background="@color/stroke_defined_search_field" />
+
+                    <eu.h2020.sc.utils.TextViewCustom
+                        android:id="@+id/text_view_destination_point"
+                        style="@style/list_item_defined_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/s_spacing"
+                        android:layout_toRightOf="@+id/view_search_divider_destination"
+                        android:ellipsize="end"
+                        android:hint="@string/hint_insert_destination"
+                        android:maxLines="1" />
+
+
+                </RelativeLayout>
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:id="@+id/ripple_layout_cancel_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:background="@drawable/cancel_search_field_bg"
+                android:clickable="true"
+                android:padding="11dp"
+                app:mrl_rippleAlpha="0.3"
+                app:mrl_rippleColor="@color/light_grey"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:id="@+id/image_view_cancel_destination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_close_white"
+                    android:tint="#6d6d6d" />
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+        </FrameLayout>
+
+        <eu.h2020.sc.utils.MaterialRippleLayout
+            android:id="@+id/ripple_btn_go_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height"
+            android:layout_marginBottom="@dimen/m_spacing"
+            android:paddingLeft="@dimen/m_spacing"
+            android:paddingRight="@dimen/m_spacing"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <Button
+                android:id="@+id/button_go_next_step"
+                style="@style/btn_primary_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_height"
+                android:clickable="false"
+                android:text="@string/set_starting_point" />
+
+        </eu.h2020.sc.utils.MaterialRippleLayout>
+
+        <eu.h2020.sc.utils.MaterialRippleLayout
+            android:id="@+id/layout_ripple_stop_transits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/hp_search_box"
+            android:visibility="gone"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="#585858"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@color/car_color_blue"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_stop_name"
+                        style="@style/list_item_defined_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/ic_point_stop"
+                        android:text="Stop Name"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_transit_lines"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Body2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/search_field_bg"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="3dp"
+                        android:text="92"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Body2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/search_field_bg"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="3dp"
+                        android:text="213"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </eu.h2020.sc.utils.MaterialRippleLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

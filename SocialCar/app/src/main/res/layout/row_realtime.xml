@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayoutRowRealtime"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s_height"
+        android:layout_marginLeft="@dimen/m_spacing"
+        android:layout_marginRight="@dimen/m_spacing"
+        android:layout_marginTop="@dimen/xs_spacing"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_public_transport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/s_spacing"
+            android:src="@drawable/ic_directions_bus_black_24dp" />
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/text_view_line_route_name"
+            style="@style/list_item_defined_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/img_public_transport"
+            android:layout_toStartOf="@+id/view_divider_box_real_time"
+            android:layout_marginRight="@dimen/xs_spacing"
+            android:drawablePadding="@dimen/s_spacing"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:text="Pian di Sco / Martino(78780)" />
+
+        <View
+            android:id="@+id/view_divider_box_real_time"
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/xs_spacing"
+            android:layout_marginTop="@dimen/xs_spacing"
+            android:layout_toStartOf="@+id/box_real_time"
+            android:background="@color/medium_grey" />
+
+        <LinearLayout
+            android:id="@+id/box_real_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/m_spacing"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <eu.h2020.sc.utils.TextViewCustom
+                android:id="@+id/text_view_waiting_time_minutes"
+                style="@style/caption_primary_color"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="21 min"
+                android:maxLines="1"
+                android:textSize="@dimen/body_1" />
+
+            <eu.h2020.sc.utils.TextViewCustom
+                android:id="@+id/text_view_waiting_time_stops_remaining"
+                style="@style/list_item_body"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="22 stops" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/s_spacing"
+        android:layout_marginRight="@dimen/s_spacing"
+        android:background="@color/medium_grey" />
+
+    <LinearLayout
+        android:id="@+id/layout_terminal_departures"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s_height"
+        android:layout_marginLeft="@dimen/m_spacing"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/h_spacing">
+
+        <eu.h2020.sc.utils.TextViewCustom
+            style="@style/drawer_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Terminal departures - "
+            android:maxLines="1"
+            android:textSize="14sp" />
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/text_view_past_departure"
+            style="@style/drawer_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/ic_solutions_circle_divider_8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:text="--:--" />
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/text_view_next_departure"
+            style="@style/drawer_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/ic_solutions_circle_divider_8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:text="--:--" />
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/text_view_future_departure"
+            style="@style/drawer_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:text="--:--" />
+    </LinearLayout>
+
+</LinearLayout>

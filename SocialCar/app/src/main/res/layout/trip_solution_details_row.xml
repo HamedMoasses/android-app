@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/step_departure_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/text_view_start_departure"
+            style="@style/list_item_defined_title"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/xs_spacing"
+            android:textSize="@dimen/caption" />
+
+
+        <ImageView
+            android:id="@+id/image_view_step_departure_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="@dimen/s_spacing" />
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/text_view_departure_point"
+            style="@style/list_item_defined_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/image_view_step_departure_point"
+            android:layout_toRightOf="@+id/image_view_step_departure_point"
+            android:maxLines="3"
+            android:text="Starting address Starting address Starting address Starting address Starting address Starting address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body_2" />
+
+
+    </RelativeLayout>
+
+    <eu.h2020.sc.utils.MaterialRippleLayout
+        android:id="@+id/row_transport_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/step_departure_point"
+        android:paddingLeft="@dimen/m_spacing"
+        app:mrl_rippleColor="@color/medium_grey"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view_transport_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_directions_bus_black_24dp"
+                android:tint="@color/secondary_text_color" />
+
+            <ImageView
+                android:id="@+id/image_view_circles_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/s_spacing"
+                android:layout_marginRight="@dimen/s_spacing"
+                android:layout_toRightOf="@+id/image_view_transport_mode"
+                android:src="@drawable/img_details_circles" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/image_view_circles_divider"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <eu.h2020.sc.utils.TextViewCustom
+                        android:id="@+id/text_view_step_waypoint"
+                        style="@style/list_item_defined_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:paddingRight="@dimen/m_spacing"
+                        android:text="Waypoint address Waypoint address Waypoint address Waypoint address Waypoint address Waypoint address"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/body_2" />
+
+                    <eu.h2020.sc.utils.TextViewCustom
+                        android:id="@+id/text_view_step_departure"
+                        style="@style/list_item_undefined_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_view_step_waypoint"
+                        android:textSize="@dimen/caption" />
+
+                    <ImageView
+                        android:id="@+id/image_view_single_left_circle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_view_step_waypoint"
+                        android:layout_marginLeft="@dimen/xs_spacing"
+                        android:layout_marginRight="@dimen/xs_spacing"
+                        android:layout_marginTop="6dp"
+                        android:layout_toRightOf="@+id/text_view_step_departure"
+                        android:src="@drawable/ic_solutions_circle_divider_8dp" />
+
+                    <eu.h2020.sc.utils.TextViewCustom
+                        android:id="@+id/text_view_step_distance"
+                        style="@style/list_item_undefined_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_view_step_waypoint"
+                        android:layout_toRightOf="@id/image_view_single_left_circle"
+                        android:text="5km"
+                        android:textSize="@dimen/caption" />
+
+                    <ImageView
+                        android:id="@+id/image_view_single_circle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_view_step_waypoint"
+                        android:layout_marginLeft="@dimen/xs_spacing"
+                        android:layout_marginRight="@dimen/xs_spacing"
+                        android:layout_marginTop="6dp"
+                        android:layout_toRightOf="@+id/text_view_step_distance"
+                        android:src="@drawable/ic_solutions_circle_divider_8dp" />
+
+                    <eu.h2020.sc.utils.TextViewCustom
+                        android:id="@+id/text_view_step_duration"
+                        style="@style/list_item_undefined_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_view_step_waypoint"
+                        android:layout_toEndOf="@id/image_view_single_circle"
+                        android:layout_toRightOf="@id/image_view_single_circle"
+                        android:text="11 min"
+                        android:textSize="@dimen/caption" />
+
+                    <TextView
+                        android:id="@+id/tv_estimated_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_view_step_waypoint"
+                        android:layout_marginLeft="@dimen/s_spacing"
+                        android:layout_toRightOf="@+id/text_view_step_duration"
+                        android:background="@color/primary_color"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Est. time"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/image_view_driver_avatar"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/image_view_more_details"
+                    android:src="@drawable/img_default_feedback_avatar"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/image_view_more_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_navigate_next_24dp"
+                    android:tint="@color/primary_color"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="64dp"
+                android:background="@color/medium_grey" />
+
+        </RelativeLayout>
+    </eu.h2020.sc.utils.MaterialRippleLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/row_transport_mode"
+        android:paddingLeft="@dimen/m_spacing">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="64dp"
+            android:background="@color/medium_grey" />
+
+        <ImageView
+            android:id="@+id/image_view_step_arriving_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="@dimen/s_spacing"
+            android:src="@drawable/img_details_step" />
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/text_view_arriving_point"
+            style="@style/list_item_defined_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/image_view_step_arriving_point"
+            android:maxLines="3"
+            android:text="Arriving address Arriving address Arriving address Arriving address Arriving address Arriving address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body_2" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

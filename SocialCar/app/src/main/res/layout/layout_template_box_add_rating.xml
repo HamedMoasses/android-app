@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/m_spacing"
+    android:layout_marginRight="@dimen/m_spacing"
+    android:background="@drawable/card_white"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/box_add_rating_title_text"
+        style="@style/drawer_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/m_spacing" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/m_spacing"
+        android:layout_marginTop="@dimen/s_spacing"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/box_add_rating_star_preview_1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_star_add_rating_border" />
+
+        <ImageView
+            android:id="@+id/box_add_rating_star_preview_2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_star_add_rating_border" />
+
+        <ImageView
+            android:id="@+id/box_add_rating_star_preview_3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_star_add_rating_border" />
+
+        <ImageView
+            android:id="@+id/box_add_rating_star_preview_4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_star_add_rating_border" />
+
+        <ImageView
+            android:id="@+id/box_add_rating_star_preview_5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingLeft="9dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingRight="9dp"
+            android:src="@drawable/ic_star_add_rating_border" />
+    </LinearLayout>
+
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/box_add_rating_info_text"
+        style="@style/rating_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/h_spacing"
+        android:text="@string/public_feedback"
+        android:visibility="gone"/>
+
+</LinearLayout>

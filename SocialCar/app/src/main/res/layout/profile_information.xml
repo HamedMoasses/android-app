@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="eu.h2020.sc.ui.profile.ProfileActivity"
+    tools:showIn="@layout/activity_profile">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="eu.h2020.sc.ui.profile.ProfileActivity">
+
+        <RelativeLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_height"
+            android:paddingRight="@dimen/m_spacing"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_face_24dp"
+                android:tint="@color/primary_color" />
+
+            <EditText
+                android:id="@+id/edit_text_name"
+                style="@style/signup_editText_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/xh_spacing"
+                android:layout_marginEnd="@dimen/m_spacing"
+                android:drawablePadding="@dimen/m_spacing"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_name"
+                android:text="@string/name" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rating_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_height"
+            android:paddingRight="@dimen/m_spacing">
+
+            <ImageView
+                android:id="@+id/imageView_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_star_24dp"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/text_view_rating"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_rating"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_rating"
+                android:text="@string/rating" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_height"
+            android:paddingRight="@dimen/m_spacing">
+
+            <ImageView
+                android:id="@+id/imageView_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_email_24dp"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/text_view_email"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_email"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_email"
+                android:text="@string/email" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_height"
+            android:paddingRight="@dimen/m_spacing">
+
+            <ImageView
+                android:id="@+id/imageView_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_phone_24dp"
+                android:tint="@color/primary_color" />
+
+            <EditText
+                android:id="@+id/edit_text_phone"
+                style="@style/signup_editText_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xh_spacing"
+                android:layout_marginRight="@dimen/m_spacing"
+                android:drawablePadding="@dimen/m_spacing"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_view_phone"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_phone"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_phone"
+                android:text="@string/phone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/m_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/s_spacing"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/medium_grey" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/m_spacing"
+                android:layout_marginRight="@dimen/m_spacing"
+                android:text="@string/travel_preferences_optional"
+                android:textColor="@color/medium_grey"
+                android:textSize="@dimen/caption"
+                android:textStyle="italic" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/medium_grey" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/h_height"
+            android:paddingRight="@dimen/m_spacing"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView_MaxCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_coin"
+                android:tint="@color/primary_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/imageView_MaxCost"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_view_max_cost"
+                    style="@style/list_item_defined_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/m_spacing"
+                    android:layout_toRightOf="@+id/imageView_MaxCost"
+                    android:maxLines="1" />
+
+                <EditText
+                    android:id="@+id/edit_text_max_cost"
+                    style="@style/list_item_defined_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/m_spacing"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/list_item_undefined_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/m_spacing"
+                    android:layout_toRightOf="@+id/imageView_MaxCost"
+                    android:text="@string/max_cost" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_layout_gps_tracking"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_height"
+            android:clickable="true"
+            android:onClick="showDialogProfileOptions"
+            android:paddingRight="@dimen/m_spacing">
+
+            <ImageView
+                android:id="@+id/imageView_gps_tracking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_gps_fixed"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/text_view_gps_tracking"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_gps_tracking"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_gps_tracking"
+                android:text="@string/gps_tracking" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:minHeight="@dimen/h_height"
+            android:onClick="showPreferredTravelModesProfile"
+            android:paddingRight="@dimen/m_spacing"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView_PreferredTravelMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_multimodal"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/text_view_preferred_Travel_mode"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_PreferredTravelMode" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_preferred_Travel_mode"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_PreferredTravelMode"
+                android:text="@string/travel_modes" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_layout_optimize_travel_solutions_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:minHeight="@dimen/h_height"
+            android:onClick="showDialogProfileOptions"
+            android:paddingRight="@dimen/m_spacing"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView_TravelingSolutionsOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_format_list_numbers"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/text_view_optimize_travel_solutions_by"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_TravelingSolutionsOrder" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_optimize_travel_solutions_by"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_TravelingSolutionsOrder"
+                android:text="@string/optimize_travel_solutions_by" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_layout_carpooler_gender"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_height"
+            android:clickable="true"
+            android:onClick="showDialogProfileOptions"
+            android:paddingRight="@dimen/m_spacing"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView_CarpoolerGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_account_star"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/text_view_carpooler_gender"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_CarpoolerGender"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_CarpoolerGender"
+                android:text="@string/carpooler_gender" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_layout_carpooler_age_range"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_height"
+            android:clickable="true"
+            android:onClick="showDialogProfileOptions"
+            android:paddingRight="@dimen/m_spacing"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView_CarpoolerAgeRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_format_list_checks"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/text_view_carpooler_age_range"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_CarpoolerAgeRange"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_CarpoolerAgeRange"
+                android:text="@string/carpooler_age_range" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:minHeight="@dimen/h_height"
+            android:onClick="showSpecialNeedsPreferencesProfile"
+            android:paddingRight="@dimen/m_spacing"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView_wheelchair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_accessibility"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/text_view_special_needs"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_wheelchair"
+                android:text="@string/wheelchair" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_special_needs"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_wheelchair"
+                android:text="@string/special_needs" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_layout_pets"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_height"
+            android:clickable="true"
+            android:onClick="showDialogProfileOptions"
+            android:paddingRight="@dimen/m_spacing">
+
+            <ImageView
+                android:id="@+id/imageView_pets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_cat_24dp"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/text_view_pets_allowed"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_pets"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_pets"
+                android:text="@string/pets" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_layout_music"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_height"
+            android:clickable="true"
+            android:onClick="showDialogProfileOptions"
+            android:paddingRight="@dimen/m_spacing">
+
+            <ImageView
+                android:id="@+id/imageView_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_music_note"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/text_view_music_allowed"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_music"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_music"
+                android:text="@string/music" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_layout_smoking"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_height"
+            android:clickable="true"
+            android:onClick="showDialogProfileOptions"
+            android:paddingRight="@dimen/m_spacing">
+
+            <ImageView
+                android:id="@+id/imageView_smoking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/smoking"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/text_view_smoking_allowed"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_smoking"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_smoking"
+                android:text="@string/smoking" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_layout_food"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_height"
+            android:clickable="true"
+            android:onClick="showDialogProfileOptions"
+            android:paddingRight="@dimen/m_spacing">
+
+            <ImageView
+                android:id="@+id/imageView_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_food_24dp"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/text_view_food_allowed"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_food"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_food"
+                android:text="@string/food" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_layout_luggage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_height"
+            android:clickable="true"
+            android:onClick="showDialogProfileOptions"
+            android:paddingRight="@dimen/m_spacing">
+
+            <ImageView
+                android:id="@+id/imageView_luggage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/m_spacing"
+                android:src="@drawable/ic_luggage_24dp"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/text_view_luggage_allowed"
+                style="@style/list_item_defined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_luggage"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/list_item_undefined_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m_spacing"
+                android:layout_toRightOf="@+id/imageView_luggage"
+                android:text="@string/luggage" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/rowHeader"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/drawer_default_header_img" />
+
+    <ImageView
+        android:id="@+id/user_picture"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="@dimen/m_spacing"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/drawer_avatar_stroke"
+        android:scaleType="fitXY"
+        android:src="@mipmap/test_passenger_avatar" />
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/name"
+        style="@style/drawer_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/email"
+        android:layout_marginLeft="@dimen/m_spacing"
+        android:gravity="center_vertical"
+        android:text="Nicola d'Adduzio" />
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/email"
+        style="@style/drawer_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rowHeader"
+        android:layout_marginBottom="@dimen/s_spacing"
+        android:layout_marginLeft="@dimen/m_spacing"
+        android:alpha="0.65"
+        android:gravity="center_vertical"
+        android:text="fnc@movenda.com" />
+
+
+</RelativeLayout>

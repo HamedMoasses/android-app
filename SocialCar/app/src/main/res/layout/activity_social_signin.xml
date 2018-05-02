@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/img_login_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp">
+
+            <ImageView
+                android:id="@+id/signin_options_arrow_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/m_spacing"
+                android:layout_marginTop="@dimen/m_spacing"
+                android:layout_gravity="start"
+                android:clickable="true"
+                android:onClick="hideSigninOptionsLayout"
+                android:src="@drawable/ic_arrow_back_24dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageViewLogInLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/img_login_logo" />
+
+        <LinearLayout
+            android:id="@+id/signin_options_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s_spacing"
+            android:layout_marginRight="@dimen/s_spacing"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/card_white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/s_spacing"
+            android:paddingRight="@dimen/s_spacing"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/h_spacing">
+
+                <eu.h2020.sc.utils.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s_height"
+                    android:layout_toRightOf="@+id/logo_gplus"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/transparent_white"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <TextView
+                        style="@style/list_item_defined_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s_height"
+                        android:background="@drawable/btn_g_plus"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="googleSignIn"
+                        android:text="@string/signin_google"
+                        android:textColor="@color/white" />
+                </eu.h2020.sc.utils.MaterialRippleLayout>
+
+                <ImageView
+                    android:id="@+id/logo_gplus"
+                    android:layout_width="@dimen/s_height"
+                    android:layout_height="@dimen/s_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="-2dp"
+                    android:background="@drawable/btn_g_plus_stroke"
+                    android:padding="12dp"
+                    android:src="@mipmap/ic_g_plus" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xs_spacing">
+
+                <eu.h2020.sc.utils.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s_height"
+                    android:layout_toRightOf="@+id/logo_fb"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/transparent_white"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <TextView
+                        style="@style/list_item_defined_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s_height"
+                        android:background="@drawable/btn_fb"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="facebookSignIn"
+                        android:text="@string/signin_facebook"
+                        android:textColor="@color/white" />
+                </eu.h2020.sc.utils.MaterialRippleLayout>
+
+                <ImageView
+                    android:id="@+id/logo_fb"
+                    android:layout_width="@dimen/s_height"
+                    android:layout_height="@dimen/s_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="-2dp"
+                    android:background="@drawable/btn_fb_stroke"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_facebook_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_height">
+
+                <View
+                    android:layout_width="70dp"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/m_spacing"
+                    android:layout_toLeftOf="@+id/textViewOrSystemAccount"
+                    android:layout_toStartOf="@+id/textViewOrSystemAccount"
+                    android:background="@color/medium_grey" />
+
+                <TextView
+                    android:id="@+id/textViewOrSystemAccount"
+                    style="@style/list_item_defined_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/social_sign_in_or"
+                    android:textColor="@color/medium_grey" />
+
+                <View
+                    android:layout_width="70dp"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/m_spacing"
+                    android:layout_toEndOf="@+id/textViewOrSystemAccount"
+                    android:layout_toRightOf="@+id/textViewOrSystemAccount"
+                    android:background="@color/medium_grey" />
+            </RelativeLayout>
+
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_height"
+                android:layout_marginBottom="@dimen/h_spacing"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/medium_grey"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <TextView
+                    style="@style/list_item_defined_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s_height"
+                    android:background="@drawable/btn_primary_color_stroke"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="goToSignInActivity"
+                    android:text="@string/signin_by_email"
+                    android:textColor="@color/primary_color" />
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/access_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s_spacing"
+            android:layout_marginRight="@dimen/s_spacing"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/card_white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/s_spacing"
+            android:paddingRight="@dimen/s_spacing"
+            android:visibility="visible">
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_height"
+                android:layout_marginTop="@dimen/h_spacing"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/medium_grey"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <TextView
+                    style="@style/list_item_defined_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s_height"
+                    android:background="@drawable/btn_primary_color_filled_and_stroke"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="showSigninOptionsLayout"
+                    android:text="@string/signin"
+                    android:textColor="@color/white" />
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_height">
+
+                <View
+                    android:layout_width="70dp"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/m_spacing"
+                    android:layout_toLeftOf="@+id/textViewOr"
+                    android:layout_toStartOf="@+id/textViewOr"
+                    android:background="@color/medium_grey" />
+
+                <TextView
+                    android:id="@+id/textViewOr"
+                    style="@style/list_item_defined_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/social_sign_in_or"
+                    android:textColor="@color/medium_grey" />
+
+                <View
+                    android:layout_width="70dp"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/m_spacing"
+                    android:layout_toEndOf="@+id/textViewOr"
+                    android:layout_toRightOf="@+id/textViewOr"
+                    android:background="@color/medium_grey" />
+            </RelativeLayout>
+
+            <eu.h2020.sc.utils.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_height"
+                android:layout_marginBottom="@dimen/h_spacing"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/medium_grey"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <TextView
+                    style="@style/list_item_defined_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s_height"
+                    android:background="@drawable/btn_primary_color_stroke"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="goToSocialSignUp"
+                    android:text="@string/signup"
+                    android:textColor="@color/primary_color" />
+            </eu.h2020.sc.utils.MaterialRippleLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

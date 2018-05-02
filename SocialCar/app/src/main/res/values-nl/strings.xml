@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RideMyRoute</string>
+
+    <string name="url_faq">http://socialcar-project.eu/faq-nl</string>
+    <string name="url_contact_us">http://socialcar-project.eu/contact-nl</string>
+    <string name="url_terms">http://socialcar-project.eu/terms-nl</string>
+
+    <string name="trip_solution_current_trips">Huidige gevonden ritten</string>
+    <string name="trip_solution_current_tripRequest">Huidig RitVerzoek</string>
+
+    <!-- Sign UP ACTIVITY -->
+    <string name="password">Wachtwoord</string>
+    <string name="add_image">VOEG FOTO TOE</string>
+    <string name="your_personal_info">Andere info</string>
+    <string name="name">Naam</string>
+    <string name="email">E-mail</string>
+    <string name="phone">Telefoon</string>
+    <string name="dob">Geboortedatum</string>
+    <string name="gender">Geslacht</string>
+    <string name="register">Registreer</string>
+    <string name="error_filled_field">Vul alle verplichte velden correct in</string>
+    <string name="choose">Selecteer</string>>
+    <string name="step">Stap</string>
+    <string name="of">van</string>
+    <string name="complete_signup">Vervolledig de registratie</string>
+    <string name="min6">Min. 6 tekens</string>
+
+    <string name="social">Sociaal</string>
+    <string name="social_description">Ontdek meer features\nconnecteer met je facebook of google account!\</string>
+
+    <string name="new_driver_message">Het lijkt erop dat je\niet\ngeregistreerd bent als een chauffeur.</string>
+    <string name="add_car">Voeg een auto toe</string>
+    <string name="become_a_driver">Wordt een chauffeur</string>
+
+
+    <string name="error_enable_permission_app">Schakel alle toelatingen aan voor deze app</string>
+
+
+    <!-- Trip search -->
+    <string name="path">Route</string>
+    <string name="set_starting_point">Kies vertrekpunt</string>
+    <string name="starting_point">Vertrekpunt</string>
+    <string name="set_destination_point">Kies je bestemming</string>
+    <string name="destination_point">Bestemming</string>
+    <string name="search_solutions">Zoek oplossingen</string>
+    <string name="label_continue">Verder</string>
+    <string name="hint_insert_starting">Voer vertrek adres in</string>
+    <string name="hint_insert_destination">Voer adres van bestemming in</string>
+    <string name="start_point_not_setted">Kies Vertrekpunt</string>
+
+    <string name="note">Opmerking</string>
+
+
+    <string name="tab_title_passenger">PASSAGIER</string>
+    <string name="tab_title_driver">CHAUFFEUR</string>
+
+    <string name="male">Mannelijk</string>
+    <string name="female">Vrouwelijk</string>
+
+
+    <string name="user_already_created">Gebruiker bestaat al! Probeer iets anders.</string>
+    <string name="no_solutions_found">Geen oplossingen gevonden.\nGelieve opnieuw te proberen.</string>
+
+    <string name="driver">Chauffeur</string>
+    <string name="solutions_toolbar_label">Oplossingen</string>
+    <string name="waiting_time_toolbar_label">Wachttijd</string>
+    <string name="solutions_details_toolbar_label">Details</string>
+    <string name="accept_lift_toolbar_label">Lift Verzoek</string>
+    <string name="solutions_filters_label">Filters</string>
+    <string name="solutions_departure_time_label">Vertrek: NU</string>
+
+    <string name="ok">OK</string>
+    <string name="retry">Opnieuw</string>
+    <string name="feedback_not_complete_error">Gelieve alle vragen in deze enquête te beantwoorden.</string>
+    <string name="generic_error">Er ging iets verkeerd.\nGelieve opnieuw te proberen.</string>
+    <string name="no_connection_error">Controleer je internetverbinding\nen probeer opnieuw.</string>
+    <string name="unauthorized_error">Er is een fout opgetreden!</string>
+    <string name="forgot_password">Wachtwoord vergeten ?</string>
+    <string name="forgot_password_msg">Gelieve ons dan een email naar &lt;a href="http://socialcar-project.eu/contact-nl">Contacteer ons&lt;/a></string>
+    <string name="signup">Registreer</string>
+    <string name="dont_have_account">Heb je een\geen account?</string>
+    <string name="signin">Inloggen</string>
+    <string name="no_rout_found">Geen route gevonden</string>
+
+    <string name="signin_facebook">Log in met Facebook</string>
+    <string name="signin_google">Log in met Google</string>
+    <string name="have_account">Heb je al een account?</string>
+    <string name="signin_by_email">Log in met e-mail</string>
+
+    <string name="insert_email">Voer e-mail in</string>
+    <string name="insert_password">Voer wachtwoord in</string>
+    <string name="invalid_email_password">Ongeldige mailadres of wachtwoord</string>
+    <string name="social_sign_in_or">OF</string>
+    <string name="or">OF</string>
+    <string name="car_info">Info auto</string>
+    <string name="additional_info">Bijkomende Info</string>
+    <string name="model">Model</string>
+    <string name="car_plate">Nummerplaat</string>
+    <string name="plate">Plaat</string>
+    <string name="food_allowed">Eten toegelaten</string>
+    <string name="smoking_allowed">Roken toegelaten</string>
+    <string name="car_photos">Foto auto</string>
+    <string name="air_conditioning">Airco</string>
+    <string name="pets_allowed">Huisdieren toegelaten</string>
+    <string name="luggage_allowed">Bagage toegelaten</string>
+    <string name="child_seat">Kinderzitje</string>
+    <string name="colour">Kleur</string>
+    <string name="select_colour">Selecteer kleur</string>
+    <string name="seat">Zitjes</string>
+    <string name="message_progress_dialog">Laden&#8230;</string>
+    <string name="send_request">Verstuur verzoek</string>
+
+    <string name="lift_request">Lift Verzoek</string>
+    <string name="trip_accepted">Rit aanvaard</string>
+    <string name="trip_declined">Rit geweigerd</string>
+    <string name="trip_cancelled">Rit geannuleerd</string>
+
+
+    <string name="accept_lift">Aanvaarden</string>
+    <string name="decline_lift">Weigeren</string>
+    <string name="declined">Geweigerd</string>
+    <string name="from">van</string>
+    <string name="to">naar</string>
+    <string name="at_what_hour">\@</string>
+    <string name="open_navigation_drawer">Open menu</string>
+    <string name="close_navigation_drawer">Sluit menu</string>
+
+    <!-- Drawer Titles -->
+    <string name="home">Home</string>
+    <string name="profile">Profiel</string>
+    <string name="myLifts">Mijn ritten</string>
+    <string name="settings">Instellingen</string>
+    <string name="faq">FAQ</string>
+    <string name="terms">Voorwaarden &amp; bekendmaking</string>
+    <string name="contact_us">Contacteer ons</string>
+    <string name="logout">Uitloggen</string>
+    <string name="logout_dialog_text">Wil je uitloggen?</string>
+
+
+    <string name="yes">Ja</string>
+    <string name="no">Nee</string>
+
+
+    <string name="large">Groot</string>
+    <string name="medium">Medium</string>
+    <string name="small">Klein</string>
+
+    <string name="trip_status_msg">Gelieve feedback te geven</string>
+    <string name="tab_title_lift_requested">GEVRAAGD</string>
+    <string name="tab_title_lift_offered">AANGEBODEN</string>
+    <string name="active_trip">Actieve Rit</string>
+    <string name="cancelled_trip">Geannuleerde Rit</string>
+    <string name="completed_trip">De rit is voltooit</string>
+    <string name="pending_trip">Wachten op Rit</string>
+    <string name="declined_trip">Geweigerde Rit</string>
+    <string name="message_cancelled_trip">De rit werd geannuleerd.</string>
+
+    <string name="text_no_trips_found">Er werden geen ritten gevonden.\n</string>
+    <string name="text_became_new_driver">Het lijkt erop dat je niet\ngeregistreerd bent als chauffeur.</string>
+    <string name="search_for_trips">Zoeken naar ritten</string>
+    <string name="btn_become_driver">Word chauffeur</string>
+    <string name="offer_trip">Rit aanbieden</string>
+
+
+    <string name="google_play_service_error">Google Play Service Error. Probeer opnieuw.</string>
+    <string name="google_play_service_not_available">Google Play Services is niet beschikbaar.</string>
+    <string name="status">Status:</string>
+
+    <string name="lift_status_pending_message">Heeftn\niet geantwoord</string>
+    <string name="lift_status_accepted_message">aanvaardt jouw lift verzoek</string>
+    <string name="lift_status_decline_message">weigert jouw lift verzoek</string>
+    <string name="cancel_request">Verzoek annuleren</string>
+    <string name="cancel_request_confirmation_text">Wil je de lift annuleren?</string>
+    <string name="sms">SMS</string>
+    <string name="call">Bel</string>
+    <string name="pending_lift_title">Wachten op rit</string>
+    <string name="active_lift_title">Actieve rit</string>
+    <string name="completed_lift_title">Rit voltooid</string>
+    <string name="cancelled_lift_title">Rit geannuleerd</string>
+    <string name="declined_lift_title">Rit geweigerd</string>
+
+    <string name="invalid_search_ride_input">Ongeldig vertrek- of eindpunt</string>
+    <string name="enter_trip_name">Geef je rit een naam</string>
+    <string name="create_ride">Creëer</string>
+    <string name="toolbar_label_new_trip">Nieuwe Rit</string>
+    <string name="pick_image_intent_text">Profielfoto</string>
+    <string name="login_info">Login info</string>
+    <string name="error_upload_picture">Er is een fout opgetreden tijdens het opladen van de foto</string>
+
+    <string name="delete_ride_dialog_title">Rit verwijderen?</string>
+    <string name="update_ride_dialog_title">Rit desactiveren?</string>
+
+    <string name="ride_dialog_body_message">Indien je passagiers hebt geassocieerd me deze actieve rit, zullen zij verwittigd worden.</string>
+
+
+    <string name="trip_deleted">Rit verwijderd</string>
+    <string name="undo_snackbar">ONGEDAAN MAKEN</string>
+
+    <string name="delete_trip">VERWIJDER RIT</string>
+    <string name="ride_message">Wanneer je een lift verzoek voor deze rit accepteert, zal de avatar van de passagier hier getoond worden.</string>
+    <string name="click_to_add_ride">Om een nieuwe rit creëren, klik op de \"+\" knop</string>
+
+    <string name="at_date">op</string>
+    <string name="on_date">van</string>
+
+    <string name="ride_activated">Rit geactiveerd</string>
+    <string name="ride_disabled">Rit gedesactiveerd</string>
+    <string name="rating">Rating</string>
+    <string name="wheelchair">Rolstoel, Blind</string>
+    <string name="public_feedback">Om andere gebruikers te helpen, is je feedback publiek zichtbaar.</string>
+    <string name="ask_survey_text">Help andere gebruikers. Vertel ons meer over de rij-vaardigheden van %1$s\door deze korte bevraging in te vullen.</string>
+
+    <string name="not_now">NIET NU</string>
+
+    <string name="question_rating_title">Hoe was je ervaring met %1$s?</string>
+
+    <!--Survey-->
+    <string name="survey_title">Bevraging</string>
+    <string name="thanks_survey">Bedankt voor je feedback</string>
+    <string name="question_survey_punctuation">Was %1$s op tijd?</string>
+    <string name="question_survey_satisfaction">Vond je het plezant om te reizen met %1$s?</string>
+    <string name="question_survey_comfort">Was de auto comfortabel?</string>
+    <string name="question_survey_duration">Werd de aankomsttijd gerespecteerd?</string>
+    <string name="question_survey_route">Heeft %1$s de aangegeven route vervolledigd?</string>
+    <string name="question_survey_driver_behaviour">Hoe was het rijgedrag van %1$s\?</string>
+    <string name="question_survey_carpooler_behaviour">Hoe was het gedrag van %1$s\?</string>
+
+    <string name="min">min</string>
+    <string name="stops">haltes</string>
+    <string name="arriving">Aankomend</string>
+
+    <string name="edit_profile_toolbar_label">Profiel aanpassen</string>
+    <string name="special_needs_as_a_passenger">Speciale noden als passagier</string>
+
+    <string name="already_rated">Je hebt deze gebruiker al beoordeeld</string>
+    <string name="music_allowed">Muziek toegelaten</string>
+    <string name="travel_modes">Reiswijze</string>
+    <string name="optimize_travel_solutions_by">Optimaliseer ritoplossingen door</string>
+    <string name="fastest">Volgens snelste</string>
+    <string name="travel_preferences_optional">Reisvoorkeuren (optioneel)</string>
+    <string name="carpooler_gender">Voorkeur Carpooler</string>
+    <string name="no_preference">Geen voorkeur</string>
+    <string name="carpooler_age_range">Leeftijdscategorie Carpooler</string>
+    <string name="carpooler_age_range_value">30 tot 40</string>
+    <string name="special_needs">Speciale noden</string>
+    <string name="preferred_travel_mode_value">Bus</string>
+    <string name="max_nr_of_transfers">Maximaal aantal overstappen</string>
+    <string name="max_cost">Maximale kostprijs</string>
+    <string name="max_walk_distance">Maximale wandelafstand (meter)</string>
+    <string name="max_nr_of_transfers_value">3</string>
+    <string name="max_cost_value">6</string>
+    <string name="max_walk_distance_value">200m</string>
+    <string name="none">Geen</string>
+    <string name="gps_tracking">GPS Tracking</string>
+    <string name="smoking">Roken</string>
+    <string name="food">Eten</string>
+    <string name="music">Muziek</string>
+    <string name="pets">Huisdieren</string>
+    <string name="luggage">Bagage</string>
+    <string name="departure_label">Vertrek om</string>
+    <string name="arrival_label">Aankomen tegen</string>
+    <string name="done">Klaar</string>
+    <string name="cancel">Annuleren</string>
+    <string name="depart_at">Vertrek om</string>
+    <string name="arrive_by">Aankomst tegen</string>
+    <string name="signup_by_email">Registreren via mail</string>
+    <string name="continue_by_email">Ga door via mail</string>
+    <string name="message_lift_updated_as_active">De lift werd aanvaard en de passagier zal op de hoogte gebracht worden.</string>
+    <string name="message_lift_updated_as_cancelled">De lift werd geannuleerd en de passagier zal op de hoogte gebracht worden.</string>
+    <string name="message_lift_updated_as_refused">De lift werd geweigerd en de passagier zal op de hoogte gebracht worden.</string>
+    <string name="message_lift_updated">De lift werd succesvol geüpdatet.</string>
+
+    <string-array name="drawer_items_titles">
+        <item>@string/home</item>
+        <item>@string/profile</item>
+        <item>@string/myLifts</item>
+        <item>@string/reports</item>
+        <item>@string/messages</item>
+        <item>@string/terms</item>
+        <item>@string/privacy</item>
+        <item>@string/contact_us</item>
+        <item>@string/logout</item>
+    </string-array>
+
+    <string-array name="array_gender">
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+
+    <string-array name="array_carpooler_age_range">
+        <item>18&#8211;30</item>
+        <item>30&#8211;40</item>
+        <item>40&#8211;50</item>
+        <item>50&#8211;60</item>
+    </string-array>
+
+    <string-array name="array_yes_no">
+        <item>@string/yes</item>
+        <item>@string/no</item>
+    </string-array>
+
+    <string-array name="array_dialog_luggage_size">
+        <item>@string/small</item>
+        <item>@string/medium</item>
+        <item>@string/large</item>
+        <item>@string/no</item>
+    </string-array>
+
+    <string-array name="array_am_pm">
+        <item>VM</item>
+        <item>NM</item>
+    </string-array>
+
+    <string name="address_not_found">Er is geen match gevonden voor je adres!!</string>
+    <string name="book_now">Boek nu</string>
+    <string name="Large">Groot</string>
+    <string name="bus">Bus</string>
+
+
+    <string name="carpooling">Carpoolen</string>
+
+    <string name="cheapest_route">Goedkoopste</string>
+
+    <string name="distance_meters">meters</string>
+
+    <string name="empty_filtered_list">Geen resultaten</string>
+
+    <string name="error_during_get_address">Fout tijdens ophalen adres! Gelieve opnieuw te proberen</string>
+
+    <string name="fastest_route">Snelste</string>
+
+    <string name="insert_address">Voer adres in</string>
+
+    <string name="no_reports_found">Geen feedback beschikbaar, gelieve opnieuw te proberen.</string>
+
+    <string name="preferred_traveling_mode">Voorkeursmodus</string>
+
+    <string name="privacy">Privacy beleid</string>
+
+
+    <string name="report_category_accident">Ongeval</string>
+
+    <string name="report_category_traffic">Verkeer</string>
+
+    <string name="report_category_works">Werken</string>
+
+    <string name="report_created_successfully_message">Feedback succesvol geregistreerd.\nVertel anderen over jouw feedback.</string>
+
+    <string name="report_next_button">Volgende</string>
+
+
+    <string name="report_severity_high">Hoog</string>
+    <string name="report_severity_low">Laag</string>
+    <string name="report_severity_medium">Medium</string>
+
+
+    <string name="reports">Verkeerssituatie</string>
+
+    <string name="send_report_button">Versturen</string>
+
+    <string name="send_report_position_from">Van</string>
+    <string name="send_report_position_to">Naar (optioneel)</string>
+
+
+    <string name="send_report_title">Feedback versturen</string>
+
+    <string name="share_facebook">Delen op Facebook</string>
+
+    <string name="share_on_facebook_error_message">Fout tijdens delen op Facebook. Probeer later opnieuw.</string>
+
+
+    <string name="share_on_facebook_success_message">Bedankt voor het bericht!</string>
+
+    <string name="sort_solutions_by">Sorteer voorstellen volgens</string>
+
+    <string name="subway">Metro</string>
+
+    <string name="thanks_report">Bedankt voor je tijd!</string>
+
+    <string name="train">Trein</string>
+    <string name="tram">Tram</string>
+
+    <string name="turn_on_gps_message">Om de feedback te bekijken, moet je de GPS inschakelen.</string>
+
+    <string name="walk">Wandel</string>
+
+    <string name="sign_up_accept_terms_conditions_error">Ga akkoord met onze Gebruiksvoorwaarden.</string>
+
+    <string name="by_registering_you_agree_with_our">Door te registreren ga je akkoord met onze</string>
+    <string name="departs_at">Vertrekken om %1$s</string>
+    <string name="invalid_date_time">Vul alstublieft een geldige datum en tijd in</string>
+    <string name="walk_towards">Wandel naar %1$s</string>
+    <string name="report_message">Op %1$s</string>
+    <string name="walk_towards_0_min">0 min</string>
+    <string name="confirm_password">Bevestig Wachtwoord</string>
+    <string name="pending">Pending</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="active">Active</string>
+    <string name="terms_conditions">gebruiksvoorwaarden</string>
+    <string name="departure">Vertrek</string>
+
+    <string name="waypoints_label">punten toe</string>
+    <string name="add_waypoints">Voeg punten toe</string>
+    <string name="hint_insert_waypoint">Voeg punten toe</string>
+
+    <plurals name="waypoints_quantity">
+        <item quantity="one">%d punten toe</item>
+        <item quantity="other">%d punten toe</item>
+    </plurals>
+
+    <string name="no_routes_found_error">No routes were found. Please try again.</string>
+
+</resources>

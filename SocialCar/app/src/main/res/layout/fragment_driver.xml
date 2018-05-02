@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout_driver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hp_search_box"
+    tools:context="eu.h2020.sc.ui.home.driver.DriverFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_bar_ride"
+        style="?android:progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:tint="@color/accent_color"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scroll_view_rides"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m_height" />
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_ride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_plus_24dp"
+        app:backgroundTint="@color/primary_color"
+        app:layout_anchor="@id/scroll_view_rides"
+        app:layout_anchorGravity="bottom|right|end" />
+
+    <include
+        android:id="@+id/layout_template_driver_background"
+        layout="@layout/layout_template_driver_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <include
+        android:id="@+id/layout_generic_error_retry"
+        layout="@layout/layout_template_no_data_retry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <eu.h2020.sc.utils.MaterialRippleLayout
+        android:id="@+id/rippleRowDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s_height"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleColor="#cecece"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleHover="true">
+
+        <RelativeLayout
+            android:id="@+id/row"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height">
+
+            <eu.h2020.sc.utils.TextViewCustom
+                style="@style/drawer_item"
+                android:id="@+id/textView_row_drawer_primary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_height"
+                android:paddingLeft="@dimen/m_spacing"
+                android:text="Profilo"
+                android:drawablePadding="@dimen/h_spacing"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+    </eu.h2020.sc.utils.MaterialRippleLayout>
+
+    <View
+        style="@style/divider"
+        android:id="@+id/divider"
+        android:layout_marginTop="@dimen/xs_spacing"
+        android:layout_marginBottom="@dimen/xs_spacing"
+        android:layout_width="match_parent"
+        android:layout_below="@id/rippleRowDrawer"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ride_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Work to Gym"
+                    android:textColor="@color/primary_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/ride_subTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ride_title"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="22 settembre"
+                    android:textSize="@dimen/body_1" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/ride_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/m_spacing"
+                    android:background="@null"
+                    app:showText="false" />
+
+                <View
+                    android:id="@+id/viewOnSwitch"
+                    android:layout_width="@dimen/m_height"
+                    android:layout_height="@dimen/s_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/s_spacing"
+                    android:layout_marginTop="@dimen/s_spacing"
+                    android:background="@color/transparent" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/ride_card_map" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/m_spacing"
+                android:layout_marginRight="@dimen/m_spacing"
+                android:paddingBottom="@dimen/s_spacing"
+                android:paddingTop="@dimen/s_spacing"
+                android:text="@string/ride_message"
+                android:textSize="@dimen/body_1"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/passengerAvatarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/s_spacing">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/m_spacing"
+                android:paddingTop="@dimen/m_spacing">
+
+                <ImageView
+                    android:id="@+id/expande_map_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/m_spacing"
+                    android:layout_marginRight="@dimen/m_spacing"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:src="@drawable/ic_chevron_down" />
+
+                <TextView
+                    android:id="@+id/delete_trip_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/m_spacing"
+                    android:layout_marginStart="@dimen/m_spacing"
+                    android:clickable="true"
+                    android:text="@string/delete_trip"
+                    android:textColor="@color/secondary_text_color"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/text_create_ride"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_help_32dp"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/m_spacing"
+            android:text='@string/click_to_add_ride'
+            android:textColor="@color/primary_text_color"
+            android:visibility="visible" />
+</LinearLayout>

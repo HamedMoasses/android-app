@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="24dp">
+
+    <ImageView
+        android:id="@+id/row_feedback_image_view_default_avatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="@dimen/m_spacing" />
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/row_feedback_text_view_writer"
+        style="@style/list_item_defined_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m_spacing"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/row_feedback_image_view_default_avatar"
+        android:text="Antonia de Francesco"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_rating_and_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/row_feedback_text_view_writer"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/row_feedback_image_view_default_avatar"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:src="@drawable/ic_star_13dp"
+            android:tint="@color/dark_grey" />
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_star_13dp"
+            android:tint="@color/dark_grey" />
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_star_13dp"
+            android:tint="@color/dark_grey" />
+
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_star_13dp"
+            android:tint="@color/dark_grey" />
+
+        <ImageView
+            android:id="@+id/star5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_star_13dp"
+            android:tint="@color/dark_grey" />
+
+        <eu.h2020.sc.utils.TextViewCustom
+            android:id="@+id/textViewFeedbackDate"
+            style="@style/list_item_undefined_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/s_spacing"
+            android:text="02/11/2015"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <eu.h2020.sc.utils.TextViewCustom
+        android:id="@+id/text_view_review"
+        style="@style/list_item_defined_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_rating_and_date"
+        android:layout_marginLeft="@dimen/m_spacing"
+        android:layout_marginTop="@dimen/xs_spacing"
+        android:layout_toRightOf="@+id/row_feedback_image_view_default_avatar"
+        android:paddingRight="@dimen/m_spacing"
+        android:text="Annachiara’s driving skills are outstanding! She was also in-time at our meet-up point."
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+</RelativeLayout>
